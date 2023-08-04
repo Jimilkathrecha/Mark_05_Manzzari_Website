@@ -1,0 +1,81 @@
+.main-page2 {
+    margin-top: 60px;
+}
+
+.first_img,
+.secound_img,
+.third_img,
+.fourth_img {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fullpage .main_images .img1 img {
+    border-radius: 40px 7px;
+    width: 98%;
+    height: 96%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.fullpage .main_images .img1 {
+    border: 2px solid var(--main-fcolor);
+    height: 250px;
+    width: 190px;
+    border-radius: 40px 10px;
+}
+
+.b-kadli,
+.bajuband,
+.c-kadli,
+.l-bracelet {
+    width: 220px;
+}
+
+.fullpage span {
+    position: relative;
+    width: 95px;
+    height: 1px;
+    border: 1px solid var(--main-fcolor);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.fullpage .l-bracelet span::after,
+.bajuband span::after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    background: var(--bor-color);
+}
+
+.fullpage .main_images .img2 {
+    border: 2px solid var(--main-fcolor);
+    height: 250px;
+    width: 190px;
+    border-radius: 40px 10px;
+}
+
+.fullpage .main_images .img2 img {
+    border-radius: 40px 7px;
+    width: 98%;
+    height: 96%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.fullpage .c-kadli span::before,
+.b-kadli span::before {
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    background: var(--bor-color);
+}

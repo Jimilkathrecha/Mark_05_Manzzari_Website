@@ -1,0 +1,186 @@
+.product-sell {
+    height: fit-content;
+    margin-top: 20px;
+}
+
+.pro-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-image {
+    display: flex;
+    width: 65%;
+    gap: 8px;
+}
+
+.pro-image img {
+    height: 280px;
+    border-radius: 10px;
+}
+
+.container_ {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--col-overlay);
+    border-radius: 8px;
+}
+
+.container_:hover .overlay {
+    opacity: 1;
+}
+
+.container_:hover img {
+    transition: all 0.6s;
+    transform: scale(1.2);
+}
+
+.text {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.product-text {
+    text-align: left;
+    padding-right: 24px ;
+    padding-left: 24px ;
+    width: 35%;
+}
+
+.heading i {
+    display: none;
+}
+
+.pro-btn a {
+    text-decoration: none;
+    color: var(--main-fcolor);
+    border: 1px solid var(--main-fcolor);
+    border-radius: 5px;
+}
+
+.pro-btn i {
+    position: relative;
+    font-size: 25px;
+    z-index: 10;
+}
+
+.pro-btn .fa-solid {
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 2.5px;
+    color: red;
+    font-size: 20px;
+    z-index: -10;
+}
+
+.atb-btn a {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--main-fcolor);
+    background-color: var(--col-bg2);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.plus-btn {
+    display: flex;
+    border-bottom: 1px solid var(--main-fcolor);
+}
+
+/* tab sec. start */
+
+#pro-image-tab {
+    display: none;
+}
+
+.pro-image-tab {
+    height: 500px;
+    width: 100%;
+    gap: 20px;
+}
+
+.container_1 {
+    height: 500px;
+    position: relative;
+}
+
+.container_1 img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.small-images::-webkit-scrollbar {
+    display: none;
+}
+
+.container_2 img {
+    height: 180px;
+    border-radius: 10px;
+}
+
+.container_3 {
+    width: 180px;
+    padding: 38px;
+    border: 2px solid var(--main-fcolor);
+    border-radius: 10px;
+}
+
+.container_3 a {
+    text-decoration: none;
+    color: var(--main-fcolor);
+}
+
+.container_1 i {
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.container_1 i .fa-solid {
+    display: none;
+    position: absolute;
+    color: red;
+    font-size: 26px;
+    bottom: 0px;
+    right: 1px;
+}
