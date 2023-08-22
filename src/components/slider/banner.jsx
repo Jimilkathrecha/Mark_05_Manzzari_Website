@@ -10,7 +10,7 @@ export default function Banner() {
         // cssEase: 'linear',
         infinite: true,
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
@@ -29,12 +29,21 @@ export default function Banner() {
             </div> */}
 
 
-            <Slider className='w-[80%] h-[470px] my-[100px] mx-auto d-none d-md-block rounded-[15px] overflow-hidden' {...faded}>
-                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-1'>
-                    <img style={{ height: "470px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="images/banner-animation/styleoflife-1.png" alt="" />
+            <div className="">
+                <p className="my-5 fs-1 text-center gallient-font fw-bold">~ Promotional ~</p>
+            </div>
+            <Slider className='w-[80%] h-[470px] my-[50px] mx-auto d-none d-md-block rounded-[15px] overflow-hidden' {...faded}>
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-2'>
+                    <img style={{ height: "380px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="images/banner-animation/styleoflife-1.png" alt="" />
                 </div>
-                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-1'>
-                    <img style={{ height: "470px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="./images/banner-animation/manzzri background.png" alt="" />
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-2'>
+                    <img style={{ height: "380px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="./images/banner-animation/manzzri background.png" alt="" />
+                </div>
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-2'>
+                    <img style={{ height: "380px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="images/banner-animation/styleoflife-1.png" alt="" />
+                </div>
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-2'>
+                    <img style={{ height: "380px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="./images/banner-animation/manzzri background.png" alt="" />
                 </div>
             </Slider>
 

@@ -9,6 +9,7 @@ import Header from '../../components/header/Header'
 import Styleoflife from '../../components/styleoflife/styleoflife'
 import Whyus from '../../components/whyus/whyus'
 import Modal from '../../components/models/modal'
+import { Soulmates } from '../../components/slider/soulmates'
 // import Bloggrid from '../../components/slider/blogs/bloggrid'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Header />
       <Landingpage />
       <Styleoflife />
+      <Soulmates />
       <Categori />
       {/* <Bloggrid /> */}
       {/* <Product /> */}
