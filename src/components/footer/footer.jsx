@@ -1,11 +1,9 @@
 import React from 'react'
-
 export default function Footer() {
     return (
-
         <>
             <footer className=" pb-md-10 pb-lg-0 text-white bg-dark">
-                <div className="container py-5">
+                <div className="mx-5 p-5">
                     <div className="d-flex flex-wrap justify-content-between">
                         <div className="">
                             <div className="primary--text fs-5 mb-4">
@@ -92,7 +90,7 @@ export default function Footer() {
                             <h4 className="primary--text mb-4 fs-5">Contact Us</h4>
                             <ul className="list-unstyled ps-0 fs-13">
                                 <li className="py-2 mb-2">
-                                    <div className="icon-color blur-text opacity-50">
+                                    <div className="icon-color text-gray-400 opacity-50">
                                         <i className="fas fa-home me-3"></i>
                                         Address
                                     </div>
@@ -101,7 +99,7 @@ export default function Footer() {
                                     </div>
                                 </li>
                                 <li className="py-2 mb-2">
-                                    <div className="icon-color blur-text opacity-50">
+                                    <div className="icon-color text-gray-400 opacity-50">
                                         <i className="fas fa-envelope me-3"></i>
                                         Email
                                     </div>
@@ -110,7 +108,7 @@ export default function Footer() {
                                     </div>
                                 </li>
                                 <li className="py-2 mb-2">
-                                    <div className="icon-color blur-text opacity-50">
+                                    <div className="icon-color text-gray-400 opacity-50">
                                         <i className="fas fa-phone me-3"></i>
                                         Phone
                                     </div>
@@ -123,12 +121,12 @@ export default function Footer() {
                         <div className="mb-5">
                             <h4 className="primary--text mb-4 fs-5">Mobile Apps</h4>
                             <div className='d-flex flex-column'>
-                                <a target="_blank" className="d-inline-block pt-2 text-decoration-none" href="#">
-                                    <img src="./images/play_store.png" height="40" className="mw-100" />
-                                </a>
-                                <a target="_blank" className="d-inline-block pt-2 text-decoration-none" href="#">
-                                    <img src="./images/app_store.png" height="40" className="mw-100" />
-                                </a>
+                                <div className="d-inline-block pt-2 text-decoration-none">
+                                    <img src="./images/play_store.png" className="h-10" />
+                                </div>
+                                <div className="d-inline-block pt-2 text-decoration-none">
+                                    <img src="./images/app_store.png" className="h-10" />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,40 +147,40 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div className="row py-3">
-                        <div className="col-md-6 col-12" version="2.6">
+                        <div className="col-md-6 col-12">
                             <div className="lh-1 fs-13">
-                                <p><b>THE SHOP CMS</b></p>
-                                <p><font className='blur-text'>© ActiveITzone 2021 | Trademarks and brands are the property of their respective owners.</font></p>
+                                <p><b>THE MZR</b></p>
+                                <p className='text-gray-400 mt-3'>© Grafizen International 2023 | Trademarks and brands are the property of their respective owners.</p>
                             </div>
                         </div>
                         <div className="col-md-6 col-12">
                             <ul className="list-unstyled d-flex justify-content-end mt-2 ps-0">
                                 <li className="social-icon fs-6">
-                                    <a href="#" target="_blank" className="facebook-f p-2 rounded-circle text-decoration-none text-decoration-none">
+                                    <a href="#" target="_blank" className="hover:bg-blue-900 p-2 rounded-circle text-decoration-none border-1 border-brown transition-colors">
                                         <i className="fab fa-facebook-f">
                                         </i>
                                     </a>
                                 </li>
                                 <li className="social-icon ms-2 fs-6">
-                                    <a href="#" target="_blank" className="twitter p-2 rounded-circle text-decoration-none text-decoration-none">
+                                    <a href="#" target="_blank" className="hover:bg-blue-500 p-2 rounded-circle text-decoration-none border-1 border-brown transition-colors">
                                         <i className="fab fa-twitter">
                                         </i>
                                     </a>
                                 </li>
                                 <li className="social-icon ms-2 fs-6">
-                                    <a href="#" target="_blank" className="instagram p-2 rounded-circle text-decoration-none text-decoration-none">
+                                    <a href="#" target="_blank" className="hover:bg-pink-600 p-2 rounded-circle text-decoration-none border-1 border-brown transition-colors">
                                         <i className="fab fa-instagram">
                                         </i>
                                     </a>
                                 </li>
                                 <li className="social-icon ms-2 fs-6">
-                                    <a href="#" target="_blank" className="youtube p-2 rounded-circle text-decoration-none text-decoration-none">
+                                    <a href="#" target="_blank" className="hover:bg-red-600 p-2 rounded-circle text-decoration-none border-1 border-brown transition-colors">
                                         <i className="fab fa-youtube">
                                         </i>
                                     </a>
                                 </li>
                                 <li className="social-icon ms-2 fs-6">
-                                    <a href="#" target="_blank" className="linkedin-in p-2 rounded-circle text-decoration-none text-decoration-none">
+                                    <a href="#" target="_blank" className="hover:bg-cyan-800 p-2 rounded-circle text-decoration-none border-1 border-brown transition-colors">
                                         <i className="fab fa-linkedin-in">
                                         </i>
                                     </a>
@@ -193,6 +191,5 @@ export default function Footer() {
                 </div>
             </footer>
         </>
-
     )
 }

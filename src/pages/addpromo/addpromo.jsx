@@ -54,14 +54,14 @@ export default function Addpromo() {
 
               <div>
                 <p className="mb-2 mt-2">Main image<span className='text-danger'>*</span><span className='blur-text fs-6'>(Recommended size : 80x80 pixels)</span></p>
-                <label for="files" class="btn btn-primary px-2 py-1"><i className='fa-solid fa-upload btn-primery'></i> Upload</label>
+                <label for="files" className="btn btn-primary px-2 py-1"><i className='fa-solid fa-upload btn-primery'></i> Upload</label>
                 <input id="files" className="d-none" type="file" />
               </div>
 
               <div>
                 <p className="mb-2 mt-2">Is Cashback?</p>
 
-                <div class="checkbox-wrapper-25">
+                <div className="checkbox-wrapper-25">
                   <input type="checkbox" />
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Addpromo() {
               <div>
                 <p className="mb-2 mt-2">List Promocode?</p>
 
-                <div class="checkbox-wrapper-25">
+                <div className="checkbox-wrapper-25">
                   <input type="checkbox" />
                 </div>
               </div>

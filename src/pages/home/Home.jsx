@@ -22,9 +22,9 @@ export default function Home() {
       {/* <Product /> */}
       <Banner />
       {/* <Cart /> */}
-      <Whyus />
+      {/* <Whyus /> */}
       <Footer />
-      <Modal />
+      {/* <Modal /> */}
     </>
   )
 }

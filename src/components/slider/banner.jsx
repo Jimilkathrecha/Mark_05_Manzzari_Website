@@ -1,18 +1,50 @@
 import React, { Component } from "react";
+import Slider from "react-slick";
+
 import '../../assets/css/banner.css';
 
 export default function Banner() {
+
+    const faded = ({
+        // fade: true,
+        // cssEase: 'linear',
+        infinite: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 2000,
+    });
+
+
     return (
-            <div className="banner-sec w-100 d-flex justify-content-center">
+        <>
+            {/*<div className="w-[80%] mx-auto rounded-2xl overflow-hidden relative my-5">
+                <img className="w-100 h-100 " src="./images/banner-animation/manzzri background.png" alt="" />
+                <p className="absolute top-[30%] start-[20%]  text-white dancingscript-font fs-2">This one can make you</p>
+                <h3 className="absolute z-1 top-50 start-50 translate-middle m-0 text-white cinemasunday-font feel-text">FEEL &nbsp; UNIQUE</h3>
+                <h3 className="absolute text-white cinemasunday-font unique-text"></h3>
+                <img className="absolute h-100 top-50 start-50 translate-middle" src="./images/banner-animation/kadli3.png" alt="" /> 
+            </div> */}
 
-                <div className="container-xl banner-img position-relative mb-5">
-                    <img className="pinkimg position-absolute" src="./images/banner-animation/manzzri background.png" alt="" />
-                    <p className="position-absolute text-white dancingscript-font fs-2">This one can make you</p>
-                    <h3 className="position-absolute text-white cinemasunday-font feel-text">FEEL</h3>
-                    <img className="position-absolute img4" src="./images/banner-animation/kadli3.png" alt="" />
-                    <h3 className="position-absolute text-white cinemasunday-font unique-text">U NIQUE</h3>
+
+            <Slider className='w-[80%] h-[470px] my-[100px] mx-auto d-none d-md-block rounded-[15px] overflow-hidden' {...faded}>
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-1'>
+                    <img style={{ height: "470px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="images/banner-animation/styleoflife-1.png" alt="" />
                 </div>
+                <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-1'>
+                    <img style={{ height: "470px" }} className='w-100 object-cover rounded-[15px] pointer-events-none' src="./images/banner-animation/manzzri background.png" alt="" />
+                </div>
+            </Slider>
 
-            </div>
+            {/* <div className="w-[80%] mx-auto rounded-2xl overflow-hidden relative my-5">
+                <img className="w-100 h-100 " src="./images/banner-animation/manzzri background.png" alt="" />
+                {/* <p className="absolute top-[30%] start-[20%]  text-white dancingscript-font fs-2">This one can make you</p>
+                <h3 className="absolute z-1 top-50 start-50 translate-middle m-0 text-white cinemasunday-font feel-text">FEEL &nbsp; UNIQUE</h3>
+                // <h3 className="absolute text-white cinemasunday-font unique-text"></h3>
+                <img className="absolute h-100 top-50 start-50 translate-middle" src="./images/banner-animation/kadli3.png" alt="" />
+            </div> */}
+        </>
     );
 }

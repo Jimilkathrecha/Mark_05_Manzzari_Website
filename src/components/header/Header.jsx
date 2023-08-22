@@ -13,44 +13,44 @@ export default function Header() {
     return (
         <>
             <header className="nav justify-content-center position-sticky px-0 top-0 z-10">
-                <nav className={scroll ? " nav-bg_white onScrollNavbar mt-3 navbar d-flex justify-content-between py-2 " : "bg-black navbar d-flex justify-content-between mt-3 "}>
-                    <div className="mx-3 logo1">
+                <nav className={scroll ? "dot-bl dot-br nav-bg_white onScrollNavbar mt-3 navbar d-flex justify-content-between py-2 " : "dot-bl dot-br navbar d-flex justify-content-between mt-3 "}>
+                    <div className={scroll ? "mx-3 dot-tr dot-tl" : "mx-3"}>
                         <Link to="/home" >
-                            <img className="logo" src="./images/Png1.png" alt="" />
+                            <img className="w-[150px]" src="./images/Png1.png" alt="" />
                         </Link>
                     </div>
                     <div className="nav-contains d-flex justify-content-between gap-2">
                         <div className="container-nav justify-content-between">
                             <div className="menus d-flex gap-5 ">
+                                <Link to="/" >
+                                    <p className='sans-regular fs-6'>HOME</p>
+                                </Link>
                                 <Link to="/brands" >
-                                    <a className='sans-regular fs-6' href="">STORE</a>
-                                </Link>
-                                <Link to="/bloggrid">
-                                    <a className='sans-regular fs-6' href="">CATALOGUE</a>
-                                </Link>
-                                <Link to="/allproducts">
-                                    <a className='sans-regular fs-6' href="">COLLECTIONS</a>
-                                </Link>
-                                <Link to="/multioffers">
-                                    <a className='sans-regular fs-6' href="">OFFERS</a>
+                                    <p className='sans-regular fs-6'>STORE</p>
                                 </Link>
                                 <Link >
-                                    <a className='sans-regular fs-6' href="">CONTACT</a>
+                                    <p className='sans-regular fs-6'>CATALOGUE</p>
+                                </Link>
+                                {/* <Link to="/allproducts"> */}
+                                <Link>
+                                    <p className='sans-regular fs-6'>COLLECTIONS</p>
+                                </Link>
+                                <Link to="/multioffers">
+                                    <p className='sans-regular fs-6'>OFFERS</p>
+                                </Link>
+                                <Link >
+                                    <p className='sans-regular fs-6'>CONTACT</p>
                                 </Link>
                             </div>
                         </div>
                     </div>
-                    <div className="nav-icons d-flex gap-3">
-                        {/* <div class="search-box position-relative">
-                            <button class="btn-search "><i class="fas fa-search tx-brown"></i></button>
-                            <input type="text" class="input-search fs-6 rounded-0 " placeholder="Type to Search..." />
-                        </div> */}
-                        <a className='d-flex align-items-center' href=""><span class="material-symbols-outlined fs-3">search</span></a>
+                    <div className="nav-icons  d-flex gap-3">
+                        <a className='d-flex align-items-center' href=""><span className="material-symbols-outlined fs-3">search</span></a>
                         <Link to="/favorite">
-                            <a className='d-flex align-items-center' href=""><span class="material-symbols-outlined fs-3">favorite</span></a>
+                            <a className='d-flex align-items-center' href=""><span className="material-symbols-outlined fs-3">favorite</span></a>
                         </Link>
                         <Link to="/maincart">
-                            <a className='d-flex align-items-center' href=""><span class="material-symbols-outlined fs-3">shopping_bag</span></a>
+                            <a className='d-flex align-items-center' href=""><span className="material-symbols-outlined fs-3">shopping_bag</span></a>
                         </Link>
 
                     </div>
@@ -67,9 +67,6 @@ export default function Header() {
                         <div className="search-icon">
                             <a href=""><i className='fa fa-search'></i></a>
                         </div>
-                    </div>
-                    <div className="tab-logo">
-                        <img className="logo" src="./images/Png1.png" alt="" />
                     </div>
                     <div className="hb_icons d-flex justify-content-evenly">
                         <a href=""><i className="far fa-heart"></i></a>

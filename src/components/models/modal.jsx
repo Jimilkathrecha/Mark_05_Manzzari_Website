@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Modal() {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <>
-            
+
             <div className='signup'>
                 <button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalForm">
                     Login Or Signup
@@ -19,7 +22,7 @@ export default function Modal() {
                                     <img className='w-100 align-items-center' src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw68b03088/login-pop-up.jpg" alt="" />
                                     <form>
                                         <div id="floating-label-group" className="phoneno-field my-3">
-                                            <div class="label-float label-float-select">
+                                            <div className="label-float label-float-select">
                                                 <label className='position-absolute top-0 start-0 tx-brown bg-dark z-1 p-0 px-1 pt-1 ms-1'>Code</label>
                                                 <select className='border-brown rounded bg-dark text-white position-relative h-100 px-1' name="Code" id="">
                                                     <option id="+91" value="+91" selected="selected"> +91</option>
@@ -28,7 +31,7 @@ export default function Modal() {
                                                     <option id="+91" value="+91" > +94</option>
                                                 </select>
                                             </div>
-                                            <div class="label-float">
+                                            <div className="label-float">
                                                 <input className='border-brown rounded bg-dark text-white px-2' type="text" placeholder=" " />
                                                 <label className='tx-brown bg-dark pb-0'>Enter your Number</label>
                                             </div>
@@ -54,6 +57,23 @@ export default function Modal() {
                 </div>
             </div>
 
+            <button variant="primary" onClick={handleShow}>
+                Launch demo modal
+            </button>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                    <button variant="secondary" onClick={handleClose}>
+                        Close
+                    </button>
+                    <button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </button>
+                </Modal.Footer>
+            </Modal>
 
             <div className='otp-modal'>
                 <button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#ModalForm2">
@@ -118,12 +138,12 @@ export default function Modal() {
                                                 <option id="mrs" value="mrs" > MRS.</option>
                                             </select>
                                         </div>
-                                        <div class="label-float">
+                                        <div className="label-float">
                                             <input className='border-brown rounded bg-dark text-white px-2 w-100' type="text" placeholder=" " />
                                             <label className='tx-brown bg-dark pb-0'>Enter Full Name</label>
                                         </div>
                                         <div id="floating-label-group" className="phoneno-field my-2">
-                                            <div class="label-float label-float-select">
+                                            <div className="label-float label-float-select">
                                                 <label className='position-absolute top-0 start-0 tx-brown bg-dark z-1 p-0 px-1 pt-1 ms-1'>Code</label>
                                                 <select className='border-brown rounded bg-dark text-white position-relative h-100 px-1' name="Code" id="">
                                                     <option id="+91" value="+91" selected="selected"> +91</option>
@@ -132,15 +152,15 @@ export default function Modal() {
                                                     <option id="+91" value="+91" > +94</option>
                                                 </select>
                                             </div>
-                                            <div class="label-float">
+                                            <div className="label-float">
                                                 <input className='border-brown rounded bg-dark text-white px-2' type="text" placeholder=" " />
                                                 <label className='tx-brown bg-dark pb-0'>Enter your Number</label>
                                             </div>
                                         </div>
-                                        <div class="label-float">
-                                                <input className='border-brown rounded bg-dark text-white px-2 w-100' type="text" placeholder=" " />
-                                                <label className='tx-brown bg-dark pb-0'>Enter Email ID</label>
-                                            </div>
+                                        <div className="label-float">
+                                            <input className='border-brown rounded bg-dark text-white px-2 w-100' type="text" placeholder=" " />
+                                            <label className='tx-brown bg-dark pb-0'>Enter Email ID</label>
+                                        </div>
                                         <p className='my-3'>By continuing, I agree to
                                             <a href="">Terms of Use</a> & <a href="#">Privacy Policy</a>
                                         </p>

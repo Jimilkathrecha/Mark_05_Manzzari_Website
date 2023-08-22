@@ -12,11 +12,11 @@ export default function Allcategories() {
 
       <Categories />
 
-      <center>
+      <div>
         <Link className='m-auto mb-3' to='/home' >
           <button className="m-auto tx-brown radius-bottom px-5 bg-transparent border border-brown fs-5 py-1">Back</button>
         </Link>
-      </center>
+      </div>
 
       <Footer />
     </>
