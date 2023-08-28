@@ -15,6 +15,38 @@ export default function Categories() {
     autoplay: true,
     autoplaySpeed: 4000,
     speed: 2000,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: "60px",
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "0px",
+          slidesToScroll: 1,
+        }
+      }
+    ]
   });
 
   const category = [
@@ -35,27 +67,85 @@ export default function Categories() {
           <p className="my-5 fs-1 text-center gallient-font fw-bold">~ Our Categories ~</p>
         </div>
       </div>
-      {/* <div className="flex w-fit gap-4 mx-auto justify-center"> */}
-        <div className='w-100 mx-5 px-5'>
-          <Slider {...Categoryslide}>
-            {category.map((item) => (
-              <div key={item} className="w-75 border-anime scale-img shadow zoom-in m-2">
-                <div className="content">
-                  <div className="back">
-                    <div className="back-content w-1 p-2">
-                      <div className="w-[220px] rounded-lg overflow-hidden shadow-2">
-                        <img className='w-100 rounded-lg overflow-hidden object-cover' src={item.img} alt="" />
-                      </div>
-                      <div className="rounded-md">
-                        <p className='tx-brown fs-5 font-bold px-2 py-1'>~ {item.name} ~</p>
-                      </div>
-                    </div>
-                  </div>
+      <div className='w-[80%] mx-auto'>
+        <div className="flex flex-col">
+          <div className="justify-between xl:flex">
+            <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
+                </div>
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <h3 className='text-center mb-2 font-medium text-lg px-1'>Mangalsutra</h3>
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full'></p>
+                  </span>
                 </div>
               </div>
-            ))}
-          </Slider>
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <h3 className='text-center mb-2 font-medium text-lg px-1'>Dokyas</h3>
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]'></p>
+                  </span>
+                </div>
+                <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="img2 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bangle png.png" alt="" />
+                </div>
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full'></p>
+                  </span>
+                  <h3 className='text-center mt-2 font-medium text-lg'>Bracelate</h3>
+                </div>
+              </div>
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]'></p>
+                  </span>
+                  <h3 className='text-center mt-2 font-medium text-lg'>Kadlis</h3>
+                </div>
+                <div className="img2 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bracelete.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
+                </div>
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <h3 className='text-center mb-2 font-medium text-lg px-1'>Earrings or Pandant</h3>
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full'></p>
+                  </span>
+                </div>
+              </div>
+              <div className="flex gap-3 my-3 justify-center">
+                <div className="flex flex-col justify-center align-items-center my-4">
+                  <h3 className='text-center mb-2 font-medium text-lg px-1'>Rings</h3>
+                  <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
+                    <p className='absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]'></p>
+                  </span>
+                </div>
+                <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
+                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button className="mx-auto my-3 tx-brown radius-bottom px-5 bg-transparent border border-brown fs-5 py-1">Explore More</button>
         </div>
+      </div>
       {/* </div> */}
     </>
   )

@@ -234,6 +234,9 @@ body {
 .bs-brown {
     background: var(--main-fcolor) !important;
 }
+.bs-light-brown{
+    background-color: var(--col-bg2);
+}
 
 /* ================================ */
 
@@ -1239,7 +1242,7 @@ button:hover {
 }
 
 .form-control:focus {
-    box-shadow: inset 0 -1px 0 #7e7e7e;
+    /* box-shadow: inset 0 -1px 0 #7e7e7e; */
 }
 
 .form-control {

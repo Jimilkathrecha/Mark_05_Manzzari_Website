@@ -18,17 +18,6 @@ const product = [
     { id: 13, name: "Sparkling Flower Diamond Stud Earrings", img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw49fd1e7c/images/hi-res/500934SBAAAA09_1.jpg?sw=360&sh=360" },
 ];
 
-
-const soulmate2 = ({
-    infinite: true,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 4000,
-});
-
-
 const soulmate = ({
     infinite: true,
     arrows: false,
@@ -40,11 +29,10 @@ const soulmate = ({
         {
             breakpoint: 1024,
             settings: {
-                settings: "unslick"
-                // slidesToShow: 3,
-                // slidesToScroll: 3,
-                // infinite: true,
-                // dots: true
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
             }
         },
         {
@@ -58,7 +46,7 @@ const soulmate = ({
             breakpoint: 480,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 2
+                slidesToScroll: 1
             }
         }
         // You can unslick at a given breakpoint now by adding:
@@ -67,13 +55,34 @@ const soulmate = ({
     ]
 });
 
+const soulmate2 = ({
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 4000,
+});
+
+
 export const Soulmates = () => {
     return (
         <>
             <div className='px-3 my-5 py-3'>
-                <div className="md:flex px-5 justify-center gap-5 w-100">
-                    <div className='w-[60%] d-none d-md-block my-auto'>
-                        <div className="text-center h-25 mb-3">
+                <div className="flex flex-col mt-[150px] lg:flex-row px-2 justify-center gap-5 w-100">
+                    <div className="text-center h-25 lg:hidden">
+                        <p className="fs-1 text-center gallient-font fw-bold">~ Soulmate ~</p>
+                    </div>
+                    <Slider className='3xs:h-[250px] xs:h-[300px] lg:h-[410px] 3xs:w-100 lg:w-[30%] rounded-3xl overflow-hidden lg:order-2' {...soulmate2}>
+                        <div className='w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2'>
+                            <img className=' 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-fit object-right' src="https://www.tanishq.co.in/on/demandware.static/-/Sites/default/dw2e4d2b6b/586x430-copy-8.jpg" alt="" />
+                        </div>
+                        <div className='w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2'>
+                            <img className=' 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-cover object-left' src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/07-JULY/AppBanner/OGE/01/Mobile_768x890.webp" alt="" />
+                        </div>
+                    </Slider>
+                    <div className='3xs:w-100 lg:w-[60%] my-auto lg:order-1'>
+                        <div className="hidden text-center h-25 mb-3 lg:block">
                             <p className="my-1 fs-1 text-center gallient-font fw-bold">~ Soulmate ~</p>
                         </div>
                         <div className=''>
@@ -89,13 +98,6 @@ export const Soulmates = () => {
                                                     <Link to='/compare' >
                                                         <i className="fa fa-arrow-right-arrow-left absolute top-0 p-2 m-1 hov-scale-2 tx-marun" title='Add to Compare'></i>
                                                     </Link>
-                                                    {/* <div className='flex absolute top-0 end-0 hov-scale-2 p-2' onClick={() => toggleLike(product.id)}>
-                                                        {likes[product.id] ?
-                                                            <i className="fa-solid fa-heart fs-5 tx-red"></i>
-                                                            :
-                                                            <i className="fa-regular fa-heart fs-5"></i>
-                                                        }
-                                                    </div> */}
                                                 </div>
                                                 <div className='p-[10px] pb-0'>
                                                     <div className=''>
@@ -119,15 +121,6 @@ export const Soulmates = () => {
                             </Slider>
                         </div>
                     </div>
-                    <Slider className='w-[30%] d-none d-md-block' {...soulmate2}>
-                        <div className='w-100 rounded-5 overflow-hidden border-0 px-2'>
-                            <img className='h-[400px] w-100 rounded-5 border-0 object-fit object-right' src="https://www.tanishq.co.in/on/demandware.static/-/Sites/default/dw2e4d2b6b/586x430-copy-8.jpg" alt="" />
-                        </div>
-                        <div className='w-100 rounded-5 overflow-hidden border-0 px-2'>
-                            <img className='h-[400px] w-100 rounded-5 border-0 object-cover object-left' src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/07-JULY/AppBanner/OGE/01/Mobile_768x890.webp" alt="" />
-                        </div>
-                    </Slider>
-
                 </div>
             </div>
         </>

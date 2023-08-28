@@ -12,16 +12,16 @@ export default function Header() {
 
     return (
         <>
-            <header className="nav justify-content-center position-sticky px-0 top-0 z-10">
+            <header className="nav justify-content-center sticky px-0 top-0 z-10">
                 <nav className={scroll ? "dot-bl dot-br nav-bg_white onScrollNavbar mt-3 navbar d-flex justify-content-between py-2 " : "dot-bl dot-br navbar d-flex justify-content-between mt-3 "}>
                     <div className={scroll ? "mx-3 dot-tr dot-tl" : "mx-3"}>
                         <Link to="/home" >
-                            <img className="w-[150px]" src="./images/Png1.png" alt="" />
+                            <img className="lg:w-[150px] md:w-32 sm:w-24 w-20" src="./images/Png1.png" alt="" />
                         </Link>
                     </div>
                     <div className="nav-contains d-flex justify-content-between gap-2">
                         <div className="container-nav justify-content-between">
-                            <div className="menus d-flex gap-5 ">
+                            <div className="menus hidden lg:flex lg:gap-8 xl:gap-10">
                                 <Link to="/" >
                                     <p className='sans-regular fs-6'>HOME</p>
                                 </Link>
@@ -31,7 +31,6 @@ export default function Header() {
                                 <Link >
                                     <p className='sans-regular fs-6'>CATALOGUE</p>
                                 </Link>
-                                {/* <Link to="/allproducts"> */}
                                 <Link>
                                     <p className='sans-regular fs-6'>COLLECTIONS</p>
                                 </Link>
