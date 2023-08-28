@@ -68,8 +68,8 @@ const soulmate2 = ({
 export const Soulmates = () => {
     return (
         <>
-            <div className='px-3 my-5 py-3'>
-                <div className="flex flex-col mt-[150px] lg:flex-row px-2 justify-center gap-5 w-100">
+            <div className='px-3'>
+                <div className="flex flex-col mt-[100px] lg:flex-row px-2 justify-center gap-5 w-100">
                     <div className="text-center h-25 lg:hidden">
                         <p className="fs-1 text-center gallient-font fw-bold">~ Soulmate ~</p>
                     </div>
