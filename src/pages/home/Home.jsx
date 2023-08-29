@@ -15,10 +15,10 @@ import Whyus from '../about/Whyus'
 import { Features } from '../../components/features/Features'
 import { Favorite } from '../../components/favorite/favorit'
 
-export default function Home() {
+export default function Home({isOpenModal, setIsOpenModal}) {
   return (
     <>
-      <Header />
+      <Header isOpenModal = {isOpenModal}  setIsOpenModal={setIsOpenModal}/>
       <Landingpage />
       <Styleoflife />
       <Categori />

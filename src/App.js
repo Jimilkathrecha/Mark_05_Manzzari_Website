@@ -11,21 +11,29 @@ import Brand from './pages/brand/brands';
 import Home from './pages/home/Home';
 import Addpromo from './pages/addpromo/addpromo';
 import Carticon from './pages/cart-icon/carticon';
+import { Modal } from './components/Modal';
+import { useState } from 'react';
 
 function App() {
+
+  const [isOpenModal, setIsOpenModal] = useState(false);
+  const [isOpenModalLogIn, setIsOpenModalLogIn] = useState(false);
+
   return (
 
     <BrowserRouter>
       <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/brands" element={<Brand />} />
-          <Route path="/allcategories" element={<Allcategories />} />
-          <Route path="/allproducts" element={<Allproducts />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path='/promo' element={<Addpromo />} />
-          <Route path='/maincart' element={<Carticon />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/brands" element={<Brand />} />
+        <Route path="/allcategories" element={<Allcategories />} />
+        <Route path="/allproducts" element={<Allproducts />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path='/promo' element={<Addpromo />} />
+        <Route path='/maincart' element={<Carticon />} />
       </Routes>
+      <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} isOpenModalLogIn={isOpenModalLogIn} setIsOpenModalLogIn={setIsOpenModalLogIn} />
+
     </BrowserRouter>
 
   );
