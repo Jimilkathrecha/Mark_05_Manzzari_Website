@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/css/landingpage.css";
 import Slider from "react-slick";
 
-export default function Landingpage() {
+export const Landingpage = () => {
   const landing = {
     fade: true,
     speed: 500,
@@ -33,7 +33,7 @@ export default function Landingpage() {
 
   return (
     <>
-      <div className="3xs:px-1 lg:px-5 my-4">
+      <div className="block md:hidden 3xs:px-1 lg:px-5 mt-[100px]">
         <div className="lg:px-5 lg:mx-3">
           <div className="flex flex-col lg:flex-row justify-content-between">
             <div className="position-relative d-flex justify-center">
@@ -110,6 +110,174 @@ export default function Landingpage() {
           </div>
         </div>
       </div>
+      <div className="hidden md:block w-100 mt-[75px]">
+        <div className="flex justify-center w-100 px-5 gap-20">
+          <div className="w-[60%]">
+            <div className="h-100 flex flex-col justify-center">
+              <div className="h-75 flex flex-col font-Philosopher justify-center">
+                <h1 className="text-7xl">READY FOR</h1>
+                <h1 className="text-7xl">
+                  <span className="tx-border">EVERY</span> OCCASION
+                </h1>
+                <button className="w-fit text-3xl border-2 border-brown px-3 py-2 rounded-full rounded-s-none mt-3 tx-brown">
+                  Shop Now
+                </button>
+              </div>
+              <div className="flex h-25 gap-24">
+                <div className="flex flex-col text-center">
+                  <h1 className="text-5xl">20k</h1>
+                  <h1 className="text-2xl text-gray-500">Products</h1>
+                </div>
+                <div className="flex flex-col text-center">
+                  <h1 className="text-5xl">50k</h1>
+                  <h1 className="text-2xl text-gray-500">New Clients</h1>
+                </div>
+                <div className="flex flex-col text-center">
+                  <h1 className="text-5xl">40k</h1>
+                  <h1 className="text-2xl text-gray-500">Recent Review</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-25 hidden xl:block relative overflow-hidden">
+            <div
+              className="w-100"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <Slider
+                className="mx-auto 3xs:w-[240px] xs:w-[330px] rounded-b-[450px] overflow-hidden z-20"
+                {...landing}
+              >
+                <img
+                  className="3xs:h-[400px] 3xs:w-100 xs:h-[450px] md:h-[555px] min-w-[250px] w-100 rounded-b-[450px] pointer-events-none"
+                  src="images/Hero-section/main-hero-section.jpg"
+                  alt=""
+                />
+                <img
+                  className="3xs:h-[400px] 3xs:w-100 xs:h-[450px] md:h-[555px] min-w-[250px] w-100 rounded-b-[450px] pointer-events-none"
+                  src="https://i.pinimg.com/originals/22/91/39/229139499d8849fefc968da7596f5be0.jpg"
+                  alt=""
+                />
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
-}
+};
+
+export const Landingpage2 = () => {
+  const landing = {
+    infinite: true,
+    arrows: true,
+    dots: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 2000,
+    centerMode: true,
+    centerPadding: "0px",
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+    ],
+  };
+
+  return (
+    <>
+      <div className="flex w-100 px-5 mt-[100px] align-items-center h-[50vh]">
+        <div className="h-100 w-[50%] flex flex-col justify-center">
+          <div className="h-75 ps-5 drop-shadow-2xl flex flex-col font-noticia justify-center">
+            <h1 className="text-7xl ">READY FOR</h1>
+            <h1 className="text-7xl">
+              <span className="tx-border">EVERY</span> OCCASION
+            </h1>
+            <button className="w-fit text-3xl border-2 border-brown px-3 py-2 rounded-full rounded-s-none mt-3 tx-brown">
+              Shop Now
+            </button>
+          </div>
+          <div className="flex h-25 mt-4 ps-5 gap-24">
+            <div className="flex flex-col text-center">
+              <h1 className="text-5xl">20k</h1>
+              <h1 className="text-2xl text-gray-500">Products</h1>
+            </div>
+            <div className="flex flex-col text-center">
+              <h1 className="text-5xl">50k</h1>
+              <h1 className="text-2xl text-gray-500">New Clients</h1>
+            </div>
+            <div className="flex flex-col text-center">
+              <h1 className="text-5xl">40k</h1>
+              <h1 className="text-2xl text-gray-500">Recent Review</h1>
+            </div>
+          </div>
+        </div>
+        <Slider
+          {...landing}
+          className="w-[50%] mx-auto d-md-block rounded-[15px] overflow-hidden"
+        >
+          <div className="landing col rounded-[50px] P-2">
+            <div className="w-[250px] h-[300px] rounded-[50px] text-center">
+              <img
+                className="w-100 px-0 h-100 object-cover rounded-[50px] my-3 mx-auto"
+                src="https://w0.peakpx.com/wallpaper/308/496/HD-wallpaper-%E1%83%A6-girl-jewelry-indian-makeup-actress.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="landing col rounded-[50px] P-2">
+            <div className="w-[250px] h-[300px] rounded-[50px] text-center">
+              <img
+                className="w-100 px-0 h-100 object-cover rounded-[50px] my-3 mx-auto"
+                src="https://w0.peakpx.com/wallpaper/872/831/HD-wallpaper-models-model-brunette-earrings-girl-indian-jewelry-mood-necklace-woman.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="landing col rounded-[50px] P-2">
+            <div className="w-[250px] h-[300px] rounded-[50px] text-center">
+              <img
+                className="w-100 px-0 h-100 object-cover rounded-[50px] my-3 mx-auto"
+                src="https://w0.peakpx.com/wallpaper/791/553/HD-wallpaper-actresses-rakul-preet-singh-actress-bollywood-brunette-girl-indian-jewelry-model-necklace.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="landing col rounded-[50px] P-2">
+            <div className="w-[250px] h-[300px] rounded-[50px] text-center">
+              <img
+                className="w-100 px-0 h-100 object-cover rounded-[50px] my-3 mx-auto"
+                src="https://w0.peakpx.com/wallpaper/88/710/HD-wallpaper-jewelry-model-earrings-indian-necklace-celebrity-black-hair-actress-shriya-saran-bollywood-saree.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div className="landing col rounded-[50px] P-2">
+            <div className="w-[250px] h-[300px] rounded-[50px] text-center">
+              <img
+                className="w-100 px-0 h-100 object-cover rounded-[50px] my-3 mx-auto"
+                src="https://w0.peakpx.com/wallpaper/516/666/HD-wallpaper-models-model-black-hair-earrings-girl-indian-jewelry-necklace-saree-woman.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </Slider>
+      </div>
+    </>
+  );
+};

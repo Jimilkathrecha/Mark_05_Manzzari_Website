@@ -1,5 +1,5 @@
 import React from 'react'
-import Landingpage from '../../components/landingpage/Landingpage'
+import { Landingpage, Landingpage2 } from '../../components/landingpage/Landingpage'
 import Categori from '../../components/categori/categori'
 import Banner from '../../components/slider/offers'
 import Footer from '../../components/footer/footer'
@@ -10,16 +10,17 @@ import { Soulmates } from '../../components/slider/soulmates'
 import Spotlight from '../../components/spotlights/Spotlight'
 import Kadli from '../../components/slider/kadli'
 import Clientgallary from '../../components/slider/Clientgallary'
-import Supporters from '../../components/supporters/Supporters'
 import Whyus from '../about/Whyus'
 import { Features } from '../../components/features/Features'
 import { Favorite } from '../../components/favorite/favorit'
+import Modal from '../../components/models/modal'
 
-export default function Home({isOpenModal, setIsOpenModal}) {
+export default function Home({ isOpenLoginModal ,  setIsOpenLoginModal}) {
   return (
     <>
-      <Header isOpenModal = {isOpenModal}  setIsOpenModal={setIsOpenModal}/>
-      <Landingpage />
+      <Header   setIsOpenLoginModal  = {setIsOpenLoginModal}/>
+      {/* <Landingpage /> */}
+      <Landingpage2 />
       <Styleoflife />
       <Categori />
       <Spotlight />
@@ -28,11 +29,11 @@ export default function Home({isOpenModal, setIsOpenModal}) {
       <Soulmates />
       <Banner />
       <Whyus />
-      <Supporters />
+      {/* <Supporter /> */}
       <Features />
       <Clientgallary />
       <Footer />
-      {/* <Modal /> */}
+      <Modal isOpenLoginModal= {isOpenLoginModal} setIsOpenLoginModal  = {setIsOpenLoginModal}  />
     </>
   )
 }
