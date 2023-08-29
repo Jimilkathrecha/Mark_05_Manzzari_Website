@@ -234,7 +234,8 @@ body {
 .bs-brown {
     background: var(--main-fcolor) !important;
 }
-.bs-light-brown{
+
+.bs-light-brown {
     background-color: var(--col-bg2);
 }
 
@@ -827,11 +828,11 @@ button:hover {
 /* header start */
 
 .navbar {
-    width: 90%;
-    position: sticky;
-    top: 0;
+    top: 4%;
+    transition: 0.8s;
+    z-index: 99999;
     border-bottom: 2px solid var(--bor-color);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 }
 
 .dot-tl::before {
@@ -1355,10 +1356,31 @@ p a:hover {
     transition: 2s ease-in-out;
 }
 
+.slick-center .landing {
+    position: relative;
+    z-index: 999;
+    margin-top: 40px;
+    opacity: 1 !important;
+    transition: 1.5s ease-in-out;
+}
+.slick-active .landing {
+    opacity: 1;
+    transition: 1.5s ease-in-out;
+}
+
 .scale-img:hover img {
     scale: 1.1;
     -webkit-transition: all .9s ease;
     -moz-transition: all .9s ease;
     -o-transition: all .9s ease;
     -ms-transition: all .9s ease;
+}
+
+/* Stroke text */
+.tx-border {
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
 }

@@ -37,6 +37,15 @@ module.exports = {
         '3xs': '300px',
         ...defaultTheme.screens,
       },
+      fontFamily: {
+        'noticia': ['"Noticia Text"', 'serif'],
+        'Philosopher': ['"Philosopher"', 'sans- serif']
+      },
+      colors: {
+        custom: {
+          212529: '#212529',
+        },
+      },
     },
   },
   plugins: [],

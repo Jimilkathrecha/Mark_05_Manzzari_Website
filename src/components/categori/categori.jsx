@@ -73,7 +73,7 @@ export default function Categories() {
             <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
               <div className="flex gap-3 my-3 justify-center">
                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
                 </div>
                 <div className="flex flex-col justify-center align-items-center my-4">
                   <h3 className='text-center mb-2 font-medium text-lg px-1'>Mangalsutra</h3>
@@ -90,14 +90,14 @@ export default function Categories() {
                   </span>
                 </div>
                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
                 </div>
               </div>
             </div>
             <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
               <div className="flex gap-3 my-3 justify-center">
                 <div className="img2 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bangle png.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bangle png.png" alt="" />
                 </div>
                 <div className="flex flex-col justify-center align-items-center my-4">
                   <span className='relative bs-brown h-[2px] w-20 rounded-2xl'>
@@ -114,14 +114,14 @@ export default function Categories() {
                   <h3 className='text-center mt-2 font-medium text-lg'>Kadlis</h3>
                 </div>
                 <div className="img2 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bracelete.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bracelete.png" alt="" />
                 </div>
               </div>
             </div>
             <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
               <div className="flex gap-3 my-3 justify-center">
                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bacha kadli png.png" alt="" />
                 </div>
                 <div className="flex flex-col justify-center align-items-center my-4">
                   <h3 className='text-center mb-2 font-medium text-lg px-1'>Earrings or Pandant</h3>
@@ -138,7 +138,7 @@ export default function Categories() {
                   </span>
                 </div>
                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[50px] rounded-br-[50px] p-2 ps-0 pb-1.5">
-                  <img className='min-w-[180px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
+                  <img className='min-w-[200px] h-60 rounded-[7px] rounded-tl-[50px] rounded-br-[50px]' src="./images/categories-images/bajubandh png.png" alt="" />
                 </div>
               </div>
             </div>

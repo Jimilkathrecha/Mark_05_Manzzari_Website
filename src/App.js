@@ -11,28 +11,36 @@ import Brand from './pages/brand/brands';
 import Home from './pages/home/Home';
 import Addpromo from './pages/addpromo/addpromo';
 import Carticon from './pages/cart-icon/carticon';
-import { Modal } from './components/Modal';
 import { useState } from 'react';
 
 function App() {
 
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const [isOpenModalLogIn, setIsOpenModalLogIn] = useState(false);
+  const [isOpenLoginModal, setIsOpenLoginModal] = useState(false);
+
+  //Preloader
+  const [loading, setLoading] = useState(true);
+  const spinner = document.getElementById("spinner");
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 2000);
+  }
 
   return (
 
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/brands" element={<Brand />} />
-        <Route path="/allcategories" element={<Allcategories />} />
-        <Route path="/allproducts" element={<Allproducts />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path='/promo' element={<Addpromo />} />
-        <Route path='/maincart' element={<Carticon />} />
+        {!loading && <Route path="/login" element={<Login />} />}
+        {!loading && <Route path="/" element={<Home isOpenLoginModal={isOpenLoginModal} setIsOpenLoginModal={setIsOpenLoginModal} />} />}
+        {!loading && <Route path="/brands" element={<Brand />} />}
+        {!loading && <Route path="/allcategories" element={<Allcategories />} />}
+        {!loading && <Route path="/allproducts" element={<Allproducts />} />}
+        {!loading && <Route path="/cart" element={<Cart />} />}
+        {!loading && <Route path='/promo' element={<Addpromo />} />}
+        {!loading && <Route path='/maincart' element={<Carticon />} />}
       </Routes>
-      <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} isOpenModalLogIn={isOpenModalLogIn} setIsOpenModalLogIn={setIsOpenModalLogIn} />
 
     </BrowserRouter>
 
