@@ -40,7 +40,12 @@ module.exports = {
       fontFamily: {
         'noticia': ['"Noticia Text"', 'serif'],
         'Philosopher': ['"Philosopher"', 'sans- serif']
-      }
+      },
+      colors: {
+        custom: {
+          212529: '#212529',
+        },
+      },
     },
   },
   plugins: [],

@@ -281,3 +281,39 @@ export const Landingpage2 = () => {
     </>
   );
 };
+
+export const Landingpage3 = () => {
+  return (
+    <>
+      <div className="hidden md:block mt-[100px] h-[70vh]">
+        <div className="flex justify-center w-100 px-5">
+          <div className="w-50 z-20 flex flex-col">
+            <div className="flex flex-col ps-60 p-48 pe-0">
+              <h1 className="text-7xl">Bring Sparkle to</h1>
+              <h1 className="text-7xl">Everyday Life</h1>
+              <button className="w-fit mx-auto mt-5 border-2 border-brown py-3 px-5 rounded-t-[100%] rounded-b-[100%] text-xl">
+                SHOP NOW
+              </button>
+            </div>
+          </div>
+          <div className="w-50 flex mt-6 relative">
+            <div className="relative h-[450px] w-[350px] rounded-t-full border-2 border-brown pt-3">
+              <img
+                className="absolute h-[450px] rounded-t-full right-5 z-10"
+                src="./images/womens-necklaces.jpg"
+                alt=""
+              />
+            </div>
+            <div className="relative right-40 h-[300px] w-[300px] border-2 border-brown top-80 rounded-tl-full rounded-b-full p-[14px]">
+              <img
+                className="absolute h-[270px] w-[270px] rounded-tl-full rounded-b-full z-20"
+                src="./images/Earings/image 20.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};

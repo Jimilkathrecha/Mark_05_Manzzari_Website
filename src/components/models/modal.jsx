@@ -49,17 +49,21 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
           aria-hidden="true"
         >
           <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-              <div className="modal-body d-flex">
+            <div className="modal-content w-100 m-auto overflow-hidden rounded-x">
+              <div className="modal-body p-0 flex">
                 <button
                   type="button"
                   onClick={() => setIsOpenLoginModal(false)}
-                  className="btn-close btn-close-white"
+                  className="absolute end-0 p-2 btn-close btn-close-white"
                   data-bs-dismiss="modal"
                   aria-label="Close"
-                ></button>
-                <div className="myform bg-dark">
-                  <p className="text-center fs-5 mb-2">Login Or Signup</p>
+                >
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <div className="myform bg-dark p-4">
+                  <p className="text-center tx-brown fs-5 mb-2">
+                    Login Or Signup
+                  </p>
                   <img
                     className="w-100 align-items-center"
                     src="https://www.tanishq.co.in/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw68b03088/login-pop-up.jpg"
@@ -68,14 +72,14 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
                   <form onSubmit={formik.handleSubmit}>
                     <div
                       id="floating-label-group"
-                      className="phoneno-field my-3"
+                      className="phoneno-field flex gap-3 my-3"
                     >
-                      <div className="label-float label-float-select relative">
-                        <label className="absolute top-0 start-0 tx-brown bg-dark z-100 p-0 px-1 pt-1 ms-1">
+                      <div className="label-float relative pt-[13px] label-float-select">
+                        <label className="text-xs position-absolute top-0 start-0 tx-brown bg-dark z-1 p-0 px-1 pt-1 ms-1 z-10">
                           Code
                         </label>
                         <select
-                          className="border-2 border-brown rounded bg-dark text-white position-relative h-100 px-1"
+                          className="py-[10px] outline-0 text-sm border-2 border-brown rounded bg-dark text-white position-relative h-100 px-1"
                           name="Code"
                           id=""
                         >
@@ -97,20 +101,47 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
                           </option>
                         </select>
                       </div>
-                      <div className="label-float col relative">
+                      {/* <div className="relative mt-[13px] w-100 border-2 border-brown rounded-md">
                         <input
-                          className={`border-2 w-100 border-brown rounded bg-dark text-white px-2 py-2${
+                          className={`peer block tx-white min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0 
+                          ${
                             formik.touched?.phone_no && formik.errors?.phone_no
                               ? "is-invalid"
                               : ""
                           }`}
                           type="number"
-                          placeholder="Enter Mobile number"
+                          id="exampleFormControlInput1"
+                          placeholder="Example label"
                           onChange={handleChangeLoginData}
                           onBlur={formik.handleBlur}
                           value={formik.values?.phone_no}
                         />
-                        <label className="tx-brown bg-dark pb-0">
+                        <label
+                          for="exampleFormControlInput1"
+                          className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] tx-brown transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.7] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:bg-custom-212529 peer-focus:pt-0 peer-focus:mt-[5px] peer-focus:px-2 motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                        >
+                          Enter your Number
+                        </label>
+                      </div> */}
+                      <div className="relative mt-[13px] w-100 border-2 border-brown rounded-md">
+                        <input
+                          type="text"
+                          className={`peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                          ${
+                            formik.touched?.phone_no && formik.errors?.phone_no
+                              ? "is-invalid"
+                              : ""
+                          }`}
+                          id="exampleFormControlInput1"
+                          placeholder="Example label"
+                          onChange={handleChangeLoginData}
+                          onBlur={formik.handleBlur}
+                          value={formik.values?.phone_no}
+                        />
+                        <label
+                          for="exampleFormControlInput1"
+                          className="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] tx-brown transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.7] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] peer-focus:bg-custom-212529 peer-focus:pt-0 peer-focus:mt-[5px] peer-focus:px-2 motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                        >
                           Enter your Number
                         </label>
                       </div>
