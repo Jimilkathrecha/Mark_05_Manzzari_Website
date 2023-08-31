@@ -49,27 +49,30 @@ export default function Header({   setIsOpenLoginModal    }) {
                 <Link>
                   <p className="sans-regular fs-6">CONTACT</p>
                 </Link>
-                <button onClick={()=>setIsOpenLoginModal(true)}  >
-                  <p className="sans-regular fs-6">LOGIN</p>
-                </button>
+                <Link to="/data">
+                  <p className="sans-regular fs-6">Data</p>
+                </Link>
+                <Link onClick={()=>setIsOpenLoginModal(true)}>
+                  <p className="sans-regular fs-6">Login</p>
+                </Link>
               </div>
             </div>
           </div>
           <div className="nav-icons  d-flex gap-3">
-            <a className="d-flex align-items-center" href="">
+            <p className="d-flex align-items-center" onClick={()=>setIsOpenLoginModal(true)}>
               <span className="material-symbols-outlined fs-3">search</span>
-            </a>
+            </p>
             <Link to="/favorite">
-              <a className="d-flex align-items-center" href="">
+              <p className="d-flex align-items-center">
                 <span className="material-symbols-outlined fs-3">favorite</span>
-              </a>
+              </p>
             </Link>
             <Link to="/maincart">
-              <a className="d-flex align-items-center" href="">
+              <p className="d-flex align-items-center">
                 <span className="material-symbols-outlined fs-3">
                   shopping_bag
                 </span>
-              </a>
+              </p>
             </Link>
           </div>
         </nav>
@@ -79,7 +82,7 @@ export default function Header({   setIsOpenLoginModal    }) {
           <div className="bs_ d-flex justify-content-evenly">
             <div className="menu m-auto">
               <button>
-                <img onclick="myFunction()" src="./images/menu1.png" alt="" />
+                <img onClick="myFunction()" src="./images/menu1.png" alt="" />
               </button>
             </div>
             <div className="search-icon">
@@ -99,7 +102,7 @@ export default function Header({   setIsOpenLoginModal    }) {
         </div>
       </nav>
       <div className="tab-menus" id="sidebar">
-        <i className="fa fa-times" onclick="closeFunction()" id="icon"></i>
+        <i className="fa fa-times" onClick="closeFunction()" id="icon"></i>
         <ul className="menu-items-nav">
           <li>
             <a href="#">STORE</a>

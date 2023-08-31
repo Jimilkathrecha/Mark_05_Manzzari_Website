@@ -23,8 +23,8 @@ const soulmate = ({
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    autoPlay: true,
+    autoPlaySpeed: 4000,
     responsive: [
         {
             breakpoint: 1024,
@@ -60,8 +60,8 @@ const soulmate2 = ({
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
+    autoPlay: false,
+    autoPlaySpeed: 4000,
 });
 
 

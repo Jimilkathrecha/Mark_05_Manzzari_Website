@@ -12,8 +12,8 @@ export default function Offers() {
         arrows: false,
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 4000,
+        autoPlay: true,
+        autoPlaySpeed: 4000,
         speed: 2000,
         responsive: [
             {

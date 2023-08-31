@@ -23,8 +23,8 @@ const manzzrifav = ({
     arrows: false,
     slidesToShow: 5,
     slidesToScroll: 2,
-    autoplay: false,
-    autoplaySpeed: 4000,
+    autoPlay: false,
+    autoPlaySpeed: 4000,
     responsive: [
         {
             breakpoint: 1024,

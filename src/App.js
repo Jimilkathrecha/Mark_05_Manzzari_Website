@@ -9,6 +9,7 @@ import Allproducts from './pages/allproducts/allproducts';
 import Cart from './pages/addtocart/cart'
 import Brand from './pages/brand/brands';
 import Home from './pages/home/Home';
+import Data from './pages/Data';
 import Addpromo from './pages/addpromo/addpromo';
 import Carticon from './pages/cart-icon/carticon';
 import { useState } from 'react';
@@ -40,6 +41,7 @@ function App() {
         {!loading && <Route path="/cart" element={<Cart />} />}
         {!loading && <Route path='/promo' element={<Addpromo />} />}
         {!loading && <Route path='/maincart' element={<Carticon />} />}
+        {!loading && <Route path='/data' element={<Data />} />}
       </Routes>
 
     </BrowserRouter>

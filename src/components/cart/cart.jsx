@@ -61,21 +61,21 @@ export default function Cart() {
                                         <i className="fas fa-heart" id="heart1"></i>
                                     </div>
                                 )}
-                                <img src="./images/image 22.png" id="main" onclick=" change(this.src)" alt="" />
+                                <img src="./images/image 22.png" id="main" onClick=" change(this.src)" alt="" />
                             </div>
                         </div>
                         <div className="small-images gap-2">
                             <div className="container_2 product2">
-                                <img src="./images/image 15.png" onclick="change(this.src)" alt="" />
+                                <img src="./images/image 15.png" onClick="change(this.src)" alt="" />
                             </div>
                             <div className="container_2 product3">
-                                <img src="./images/image 16.png" onclick="change(this.src)" alt="" />
+                                <img src="./images/image 16.png" onClick="change(this.src)" alt="" />
                             </div>
                             <div className="container_2 product4">
-                                <img src="./images/image 17.png" onclick="change(this.src)" alt="" />
+                                <img src="./images/image 17.png" onClick="change(this.src)" alt="" />
                             </div>
                             <div className="container_2 product5">
-                                <img src="./images/image 18.png" onclick="change(this.src)" alt="" />
+                                <img src="./images/image 18.png" onClick="change(this.src)" alt="" />
                             </div>
                             <div className="container_3">
                                 <a href=""> VIEW MORE</a>
@@ -99,7 +99,7 @@ export default function Cart() {
                         <h6 className="mt-4">22KT PURITY GOLD EARRINGS FOR WOMEN</h6>
                         <div className="pro-btn d-flex justify-content-between">
                             <a className="px-3 py-1" href="">One Size</a>
-                            <i className="far fa-heart" onclick="thisFunction()">
+                            <i className="far fa-heart" onClick="thisFunction()">
                                 <i className="fa-solid fa-heart" id="heart2"></i>
                             </i>
                         </div>
