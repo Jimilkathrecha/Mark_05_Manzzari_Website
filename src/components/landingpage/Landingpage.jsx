@@ -172,7 +172,7 @@ export const Landingpage = () => {
 export const Landingpage2 = () => {
   const landing = {
     speed: 2000,
-    arrows: true,
+    arrows: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
