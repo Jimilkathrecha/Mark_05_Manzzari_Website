@@ -12,7 +12,7 @@ export default function Spotlight() {
 
         <div className="d-flex flex-wrap justify-center gap-2 w-100">
           <div
-            className="w-[100%] sm:w-[24%] !opacity-100"
+            className="w-[100%] sm:w-[24%]"
             data-aos="fade-right"
             data-aos-duration="1800"
             data-aos-anchor-placement="bottom-bottom"

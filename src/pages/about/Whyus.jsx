@@ -10,8 +10,9 @@ const Whyus = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4 md:flex-row mx-auto justify-center align-items-center w-[80%]">
-          <div className="w-100 md:w-50 mx-auto overflow-hidden">
-            <div className="mx-auto w-[600px]">
+          <div className="w-100 md:w-50 mx-auto">
+            <div className="mx-auto w-[600px] rounded-3xl shadow-2 relative overflow-hidden">
+              <div className="absolute w-100 h-100 z-50 shadow-[inset_0px_0px_100px_#ffffff]"></div>
               <video
                 className="mx-auto object-top w-100"
                 loop

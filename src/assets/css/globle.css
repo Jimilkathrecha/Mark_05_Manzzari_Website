@@ -610,8 +610,8 @@ input[type="number"] {
     border-bottom: 2px dashed #000;
 }
 
-.scroll-display-none::-webkit-scrollbar {
-    display: none;
+.scroll-d-none::-webkit-scrollbar {
+    display: none !important;
 }
 
 .text-select-none {
@@ -1354,17 +1354,20 @@ p a:hover {
 .slick-active .uniq img {
     scale: 1;
     transition: 2s ease-in-out;
+    margin-top: 0px;
 }
 
 .slick-center .landing {
     position: relative;
     z-index: 999;
-    margin-top: 40px;
     opacity: 1 !important;
+    margin-top: 40px !important;
     transition: 1.5s ease-in-out;
 }
+
 .slick-active .landing {
     opacity: 1;
+    margin-top: 0px;
     transition: 1.5s ease-in-out;
 }
 
@@ -1383,4 +1386,53 @@ p a:hover {
     /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
+}
+
+.slick-center .zoomin {
+    scale: 0.6;
+    margin-left: 0 !important;
+    z-index: -10 !important;
+    position: relative;
+    transition: .7s;
+}
+
+.slick-active .zoomin {
+    margin-left: 90px;
+    transition: .7s;
+}
+
+.landing .slick-prev:before {
+    background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0 0 / 100% no-repeat;
+    color: transparent;
+    font-size: 40px;
+}
+
+.landing .slick-next:before {
+    background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
+    color: transparent;
+    font-size: 32px;
+}
+
+.slick-prev {
+    width: 40px;
+    left: auto;
+    right: 24% !important;
+    top: auto;
+    bottom: 11% !important;
+    z-index: 99999;
+    border-radius: 12px;
+}
+
+.slick-next {
+    border-radius: 12px;
+    width: 40px;
+    left: auto;
+    right: 21% !important;
+    top: auto;
+    bottom: 13% !important;
+    z-index: 99999;
+}
+
+.slick-arrow .slick-prev {
+    background: #000 !important;
 }

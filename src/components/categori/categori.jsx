@@ -12,8 +12,8 @@ export default function Categories() {
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
+    autoPlay: true,
+    autoPlaySpeed: 4000,
     speed: 2000,
     responsive: [
       {

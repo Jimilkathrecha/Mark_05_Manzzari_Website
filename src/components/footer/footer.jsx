@@ -119,7 +119,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="mb-5 text-center ">
+                        <div className="mb-5 md:text-start">
                             <h4 className="tx-brown mb-4 fs-5">Mobile Apps</h4>
                             <div className='flex md:flex-col gap-3 w-100'>
                                 <div className="pt-2 w-50 text-decoration-none">

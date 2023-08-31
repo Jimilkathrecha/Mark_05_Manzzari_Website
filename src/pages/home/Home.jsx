@@ -3,6 +3,10 @@ import {
   Landingpage,
   Landingpage2,
   Landingpage3,
+  Landingpage4,
+  Landingpage5,
+  Landingpage6,
+  Landingpage7,
 } from "../../components/landingpage/Landingpage";
 import Categori from "../../components/categori/categori";
 import Banner from "../../components/slider/offers";
@@ -27,8 +31,8 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoPlay: false,
+    autoPlaySpeed: 3000,
     speed: 2000,
     centerMode: true,
     centerPadding: "0px",
@@ -38,11 +42,32 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
     <>
       <Header setIsOpenLoginModal={setIsOpenLoginModal} />
 
-      <Slider {...Banners}>
-        <Landingpage />
-        <Landingpage2 />
-        <Landingpage3 />
-      </Slider>
+      {/* <Slider {...Banners}> */}
+      <div className="flex snap-x snap-mandatory scroll-d-none overflow-auto w-200 h-[100vh]">
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage2 />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage3 />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage4 />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage5 />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage6 />
+        </div>
+        <div className="flex-none w-full h-full snap-center border">
+          <Landingpage7 />
+        </div>
+      </div>
+
+      {/* </Slider> */}
 
       <Styleoflife />
       <Categori />

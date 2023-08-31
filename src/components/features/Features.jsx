@@ -4,10 +4,10 @@ export const Features = () => {
   return (
     <div>
       <div className="mx-3 px-3 my-5">
-        <div class="flex flex-wrap gap-4 text-center w-100 justify-evenly items-center">
-          <div class="min-w-[100px]">
+        <div className="flex flex-wrap gap-4 text-center w-100 justify-evenly items-center">
+          <div className="min-w-[100px]">
             <img
-              class="mx-auto my-2"
+              className="mx-auto my-2"
               alt="Assured Lifetime Jewellery Maintenance"
               src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/assured-lifetime-maintenances2.svg"
             />
@@ -19,10 +19,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Easy Exchange">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Easy Exchange of Jewellery"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/easy-exchange2.svg"
               />
@@ -35,10 +35,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Your Jewellery is Insured">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Your Jewellery is Insured"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/your-jewellery-is-Insured2.svg"
               />
@@ -51,10 +51,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="14 Days Return Policy">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="14 Days Jewellery Return Policy"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/14-days-return-policy2.svg"
               />
@@ -67,10 +67,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Tested &amp; Certified Diamonds">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Tested and Certified Diamonds"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/Only_Certified_Jewellery-012.svg"
               />
@@ -83,10 +83,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Complete Transparency">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Complete Jewellery Transparency"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/complete-transparency1.svg"
               />
@@ -99,10 +99,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Zero Deduction Gold Exchange">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Zero Deduction Gold Exchange"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/zero-deduction-gold-exchange2.svg"
               />
@@ -115,10 +115,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="BIS 916 Hallmarked Pure Gold">
               <img
-                class="mx-auto my-2 !w-[68px]"
+                className="mx-auto my-2 !w-[68px]"
                 alt="BIS 916 Hallmarked Pure Gold"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/100-Huid.svg"
               />
@@ -131,10 +131,10 @@ export const Features = () => {
               </a>
             </h3>
           </div>
-          <div class="min-w-[100px]">
+          <div className="min-w-[100px]">
             <a title="Guaranteed Buyback">
               <img
-                class="mx-auto my-2"
+                className="mx-auto my-2"
                 alt="Guaranteed Jewellery Buyback"
                 src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/guaranteed-buyback2.svg"
               />
