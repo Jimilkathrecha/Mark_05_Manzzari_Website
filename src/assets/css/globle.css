@@ -1413,7 +1413,7 @@ p a:hover {
     font-size: 32px;
 }
 
-.slick-prev {
+.landing .slick-prev {
     width: 40px;
     left: auto;
     right: 24% !important;
@@ -1423,7 +1423,7 @@ p a:hover {
     border-radius: 12px;
 }
 
-.slick-next {
+.landing  .slick-next {
     border-radius: 12px;
     width: 40px;
     left: auto;
