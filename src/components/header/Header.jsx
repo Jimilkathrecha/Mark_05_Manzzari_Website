@@ -59,9 +59,9 @@ export default function Header({   setIsOpenLoginModal    }) {
             </div>
           </div>
           <div className="nav-icons  d-flex gap-3">
-            <p className="d-flex align-items-center" onClick={()=>setIsOpenLoginModal(true)}>
+            <Link className="d-flex align-items-center" onClick={()=>setIsOpenLoginModal(true)}>
               <span className="material-symbols-outlined fs-3">search</span>
-            </p>
+            </Link>
             <Link to="/favorite">
               <p className="d-flex align-items-center">
                 <span className="material-symbols-outlined fs-3">favorite</span>

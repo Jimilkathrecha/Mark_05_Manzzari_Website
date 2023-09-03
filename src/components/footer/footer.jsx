@@ -6,22 +6,15 @@ export default function Footer() {
             <footer className=" pb-md-10 pb-lg-0 text-white bg-dark">
                 <div className="mx-2 md:mx-5 px-2 md:p-5">
                     <div className="d-flex flex-wrap justify-content-between">
-                        <div className="text-center">
+                        <div className="">
                             <div className="tx-brown fs-5 mb-4">
-                                get your special offers coupons more
+                                Get your special offers, coupons & more...
                             </div>
                             <form novalidate="novalidate" className="">
-                                <div className="v-input white mb-2 ">
-                                    <div className="v-input__control">
-                                        <div className="v-input__slot">
-                                            <div className="v-text-">
-                                                <input required="required" id="input-36" placeholder="Your email address" type="email" className="px-3 rounded w-100 p-2" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" className="v-btn my-3 px-3 border border-brown rounded tx-brown">
-                                    <span className="v-btn__content fs-5">Subscribe</span>
+                                <input required="required" id="input-36" placeholder="Your email address" type="email" className="px-3 rounded w-100 p-2" />
+
+                                <button type="submit" className="my-3 px-3 border border-brown rounded tx-brown">
+                                    <span className=" fs-5">Subscribe</span>
                                 </button>
                             </form>
                         </div>
