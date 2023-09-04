@@ -38,7 +38,7 @@ const Clientgallary = () => {
       <div className="w-100 mt-[100px] mb-5">
         <div className="text-center">
           <p className="my-5 fs-1 text-center title">
-            ~ Gallery ~
+            Gallery
           </p>
         </div>
         <div className="flex flex-wrap gap-3 w-100 md:w-[80%] justify-center mx-auto">

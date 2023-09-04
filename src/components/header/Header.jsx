@@ -20,7 +20,7 @@ export default function Header({ setIsOpenLoginModal }) {
           }
         >
           <div className={scroll ? "mx-3 dot-tr dot-tl" : "mx-3"}>
-            <Link to="/home">
+            <Link to="/">
               <img
                 className="lg:w-[150px] md:w-32 sm:w-24 w-20"
                 src="./images/Png1.png"

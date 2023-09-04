@@ -3,7 +3,7 @@ import React from "react";
 export const Features = () => {
   return (
     <div>
-      <div className="mx-3 px-3 my-5">
+      <div className="mx-3 px-3 my-[150px]">
         <div className="flex flex-wrap gap-4 text-center w-100 justify-evenly items-center">
           <div className="min-w-[100px]">
             <img

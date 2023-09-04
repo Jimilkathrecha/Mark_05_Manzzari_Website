@@ -28,7 +28,7 @@ export default function Offers() {
     return (
         <>
             <div className="mt-[100px]">
-                <p className="my-5 fs-1 text-center title">~ Offers ~</p>
+                <p className="my-5 fs-1 text-center title">Offers</p>
             </div>
             <Slider className='w-[90%] h-[470px] my-[50px] mx-auto 3xs:h-[200px] xs:h-[250px] lg:h-[300px] rounded-[15px] overflow-hidden' {...faded}>
                 <div className='w-100 grab grabbing rounded-[15px] overflow-hidden px-2'>

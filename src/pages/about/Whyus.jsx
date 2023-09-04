@@ -6,7 +6,7 @@ const Whyus = () => {
       <div className="w-100 mt-[100px]">
         <div className="text-center">
           <p className="my-1 fs-1 text-center title">
-            ~ Why Manzzri ~
+            Why Manzzri
           </p>
         </div>
         <div className="flex flex-col mt-[70px] gap-4 md:flex-row mx-auto justify-center align-items-center w-[80%]">

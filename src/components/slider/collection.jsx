@@ -73,7 +73,6 @@ export const Collection = ({
               </div>
             </div>
           )}
-
           <div
             className={`w-100 lg:w-[${
               typeof Collection?.image === "undefined" ? "60%" : "60%"

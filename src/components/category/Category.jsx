@@ -110,7 +110,7 @@ export default function Category() {
         <>
             <div className="w-100">
                 <div className="">
-                    <p className="my-5 fs-1 text-center title">~ Our Categories ~</p>
+                    <p className="my-5 fs-1 text-center title">Our Categories</p>
                 </div>
             </div>
             <div className="w-[80%] mx-auto">
