@@ -38,7 +38,7 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
             isOpenLoginModal ? "block" : "none"
           } `}
           id="ModalForm"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="ModalFormLabel"
           aria-hidden="true"
         >
@@ -161,7 +161,7 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
         <div
           className={`modal d-${isOpenLoginModal ? "block" : "none"}`}
           id="ModalForm2"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="ModalFormLabel"
           aria-hidden="true"
         >
@@ -257,7 +257,7 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
         <div
           className={`modal d-${isOpenLoginModal ? "block" : "none"}`}
           id="ModalForm3"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="ModalFormLabel"
           aria-hidden="true"
         >

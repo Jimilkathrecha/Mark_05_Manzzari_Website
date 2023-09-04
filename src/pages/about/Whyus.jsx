@@ -16,7 +16,7 @@ const Whyus = () => {
               <video
                 className="mx-auto object-top w-100"
                 loop
-                autoplay="autoplay"
+                autoPlay="autoPlay"
                 controls
                 muted
               >

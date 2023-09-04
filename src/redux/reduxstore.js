@@ -22,6 +22,7 @@ import storeReducer from "./reducers/storeReducer";
 import wishListReducer from "./reducers/wishListReducer";
 import cartReducer from "./reducers/cartReducer";
 import compareReducer from "./reducers/compareReducer";
+import collectionReducer from "./reducers/collectionReducer";
 
 const rootReducer = combineReducers({
   attributeState: attributeReducer,
@@ -46,6 +47,7 @@ const rootReducer = combineReducers({
   wishListState: wishListReducer,
   cartState: cartReducer,
   compareState: compareReducer,
+  collectionState: collectionReducer,
 });
 
 const reduxstore = createStore(

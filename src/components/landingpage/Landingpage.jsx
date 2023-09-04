@@ -176,8 +176,8 @@ export const Landingpage2 = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoPlay: true,
+    autoPlaySpeed: 2000,
     centerMode: true,
     centerPadding: "0px",
     responsive: [
@@ -321,12 +321,12 @@ export const Landingpage4 = () => {
   const landing4 = {
     infinite: true,
     arrows: true,
-    autoplay: true,
+    autoPlay: true,
     slidesToShow: 2,
     slidesToScroll: 1,
     speed: 500,
     ltr: true,
-    autoplaySpeed: 4000,
+    autoPlaySpeed: 4000,
     centerMode: true,
     centerPadding: "0px",
     responsive: [
