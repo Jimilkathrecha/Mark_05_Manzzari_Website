@@ -110,7 +110,7 @@ export const Landingpage = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block w-100 mt-[75px]">
+      <div className="hidden md:block w-100 mt-[100px] h-[90vh]">
         <div className="flex justify-center w-100 px-5 gap-20">
           <div className="w-[60%]">
             <div className="h-100 flex flex-col justify-center">
@@ -139,7 +139,7 @@ export const Landingpage = () => {
               </div>
             </div>
           </div>
-          <div className="w-25 hidden xl:block relative overflow-hidden">
+          <div className="w-25 -mt-[25px] hidden xl:block relative overflow-hidden">
             <div
               className="w-100"
               data-aos="fade-down"
@@ -200,9 +200,9 @@ export const Landingpage2 = () => {
 
   return (
     <>
-      <div className="flex w-100 px-5 mt-[100px] align-items-center h-[60vh]">
-        <div className="h-100 w-[50%] flex flex-col justify-center">
-          <div className="h-75 ps-5 drop-shadow-2xl flex flex-col font-noticia justify-center">
+      <div className="flex pt-[100px] w-100 px-5 mt-[100px] align-items-start h-[90vh]">
+        <div className="h-100 w-[50%] flex flex-col justify-start">
+          <div className="ps-5 drop-shadow-2xl flex flex-col font-noticia justify-center">
             <h1 className="text-7xl ">READY FOR</h1>
             <h1 className="text-7xl">
               <span className="tx-border">EVERY</span> OCCASION
@@ -284,7 +284,7 @@ export const Landingpage2 = () => {
 export const Landingpage3 = () => {
   return (
     <>
-      <div className="hidden md:block mt-[100px] h-[70vh]">
+      <div className="hidden md:block mt-[100px] h-[90vh]">
         <div className="flex justify-center w-100 px-5">
           <div className="w-50 z-20 flex flex-col">
             <div className="flex flex-col ps-60 p-48 pe-0">
@@ -348,7 +348,7 @@ export const Landingpage4 = () => {
   };
   return (
     <>
-      <div className="hidden md:block mt-[100px] h-[70vh]">
+      <div className="hidden md:block mt-[100px] h-[90vh]">
         <div className="w-100 px-5 my-3">
           <div className="flex w-100 gap-4 px-5 h-[600px]">
             <div className="w-50 h-100">
@@ -410,7 +410,7 @@ export const Landingpage4 = () => {
 export const Landingpage5 = () => {
   return (
     <>
-      <div className="hidden md:block mt-[150px] h-[85vh]">
+      <div className="hidden md:block mt-[100px] h-[90vh]">
         <div className="flex flex-col px-5 h-100 justify-between">
           <div className="">
             <h1 className="text-center gallient-font font-bold">
@@ -459,8 +459,8 @@ export const Landingpage5 = () => {
 export const Landingpage6 = () => {
   return (
     <>
-      <div className="hidden md:block mt-[0px] h-[50vh]">
-        <div className="flex px-20 w-100 h-100 my-28 align-items-center justify-between">
+      <div className="hidden md:block mt-[100px] h-[90vh] pb-[150px]">
+        <div className="flex px-20 w-100 h-100 align-items-center justify-between">
           <div className="w-[40%]">
             <div className="flex flex-col">
               <h1 className="text-right text-3xl gallient-font font-semibold">
@@ -507,7 +507,7 @@ export const Landingpage7 = () => {
   return (
     <>
       <div className="hidden md:block mt-[100px] h-[90vh]">
-        <div className="flex flex-col w-100 h-100 px-5">
+        <div className="flex flex-col justify-center w-100 h-100 px-5">
           <div className="text-center">
             <h1 className="text-xs">E-Website concept</h1>
             <h1 className="text-xs">By Manzzri Official</h1>

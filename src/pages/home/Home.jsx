@@ -61,31 +61,94 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
     <>
       <Header setIsOpenLoginModal={setIsOpenLoginModal} />
 
-      {/* <Slider {...Banners}> */}
-      <div className="flex snap-x snap-mandatory scroll-d-none overflow-auto w-200 h-[100vh]">
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage />
+      {/* <Slider className="h-[80vh]" {...Banners}> */}
+      <div id="carouselExampleRide" class="carousel carousel-dark slide " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleRide"
+            data-bs-slide-to="6"
+            aria-label="Slide 7"
+          ></button>
         </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage2 />
-        </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage3 />
-        </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage4 />
-        </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage5 />
-        </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage6 />
-        </div>
-        <div className="flex-none w-full h-full snap-center border">
-          <Landingpage7 />
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="20000">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage2 />
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="30000">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage3 />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage4 />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage5 />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage6 />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div className="flex-none w-full h-full snap-center border">
+              <Landingpage7 />
+            </div>
+          </div>
         </div>
       </div>
 
+      {/* <div className="flex snap-x snap-mandatory scroll-d-none overflow-auto w-200 h-[100vh]"></div> */}
       {/* </Slider> */}
 
       <Styleoflife />

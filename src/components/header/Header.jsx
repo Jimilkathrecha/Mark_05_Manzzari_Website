@@ -24,6 +24,7 @@ export default function Header({ setIsOpenLoginModal }) {
               <img
                 className="lg:w-[150px] md:w-32 sm:w-24 w-20"
                 src="./images/Png1.png"
+                // src="/images/Manzzri_logo_TM .png"
                 alt=""
               />
             </Link>
@@ -31,52 +32,43 @@ export default function Header({ setIsOpenLoginModal }) {
           <div className="nav-contains d-flex justify-content-between gap-2">
             <div className="container-nav justify-content-between">
               <div className="menus hidden lg:flex lg:gap-8 xl:gap-10">
-                <Link to="/">
+                <li className="pointer">
                   <p className="sans-regular fs-6">HOME</p>
-                </Link>
-                <Link to="/brands">
+                </li>
+                <li className="pointer">
                   <p className="sans-regular fs-6">STORE</p>
-                </Link>
-                <Link>
+                </li>
+                <li className="pointer">
                   <p className="sans-regular fs-6">CATALOGUE</p>
-                </Link>
-                <Link>
+                </li>
+                <li className="pointer">
                   <p className="sans-regular fs-6">COLLECTIONS</p>
-                </Link>
-                <Link to="/multioffers">
+                </li>
+                <li className="pointer">
                   <p className="sans-regular fs-6">OFFERS</p>
-                </Link>
-                <Link>
+                </li>
+                <li className="pointer">
                   <p className="sans-regular fs-6">CONTACT</p>
-                </Link>
-                <Link to="/data">
-                  <p className="sans-regular fs-6">DATA</p>
-                </Link>
-                <Link onClick={() => setIsOpenLoginModal(true)}>
-                  <p className="sans-regular fs-6">LOGIN</p>
-                </Link>
+                </li>
+                {/* <p to="/data">
+                  <p className="sans-regular fs-6">Data</p>
+                </p>
+                <p onClick={()=>setIsOpenLoginModal(true)}>
+                  <p className="sans-regular fs-6">Login</p>
+                </p> */}
               </div>
             </div>
           </div>
           <div className="nav-icons  d-flex gap-3">
-            <p
-              className="d-flex align-items-center"
-              onClick={() => setIsOpenLoginModal(true)}
-            >
+            <p className="d-flex align-items-center">
               <span className="material-symbols-outlined fs-3">search</span>
             </p>
-            <Link to="/favorite">
-              <p className="d-flex align-items-center">
-                <span className="material-symbols-outlined fs-3">favorite</span>
-              </p>
-            </Link>
-            <Link to="/maincart">
-              <p className="d-flex align-items-center">
-                <span className="material-symbols-outlined fs-3">
-                  shopping_bag
-                </span>
-              </p>
-            </Link>
+            <p className="d-flex align-items-center">
+              <span className="material-symbols-outlined fs-3">favorite</span>
+            </p>
+            <p className="d-flex align-items-center">
+              <span className="material-symbols-outlined fs-3">shopping_bag</span>
+            </p>
           </div>
         </nav>
       </header>
