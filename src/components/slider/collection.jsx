@@ -15,21 +15,15 @@ import { addCompareDataAction } from "../../redux/actions/compare";
 import { confirmAlert } from "react-confirm-alert";
 import CryptoJS from "crypto-js";
 
-const products = {
-  infinite: true,
-  arrows: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoPlay: false,
-  autoPlaySpeed: 4000,
-};
-
-export const Collection = ({ Collections, Direction, Title }) => {
-  const dispatch = useDispatch();
-
+export const Collection = ({
+  setIsOpenLoginModal,
+  Collections,
+  Direction,
+  Title,
+}) => {
   const [Collection, setCollection] = useState();
   const [isSlider, setIsSlider] = useState(false);
-
+ 
   const conditionIsMet = true; // Change this condition as needed
 
   useEffect(() => {
@@ -43,18 +37,33 @@ export const Collection = ({ Collections, Direction, Title }) => {
       setIsSlider(false);
     }
   }, [Collections, Title]);
-
+  const banner = {
+    infinite: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoPlay: false,
+    autoPlaySpeed: 4000,
+  };
+  const products = {
+    infinite: true,
+    arrows: false,
+    slidesToShow: typeof Collection?.image === "undefined" ? 4 : 3,
+    slidesToScroll: 1,
+    autoPlay: false,
+    autoPlaySpeed: 4000,
+  };
   return (
     <>
       <div className="px-3">
         <div className="flex flex-col mt-[100px] lg:flex-row px-2 justify-center gap-5 w-100">
-          <div className={`lg:w-[30%] lg:order-${Direction.toLowerCase() === "right" ? "1" : "0" }`}>
-            <div className="text-center h-25 lg:hidden">
-              <p className="fs-1 text-center gallient-font fw-bold">
-                {Collection?.name}
-              </p>
-            </div>
-            <div className="h-100 w-100 rounded-3xl overflow-hidden">
+          <div className="text-center h-25 lg:hidden">
+            <p className="fs-1 text-center gallient-font fw-bold">
+              ~ {Collection?.name} ~
+            </p>
+          </div>
+          {typeof Collection?.image !== "undefined" && (
+            <div className="3xs:h-[250px] xs:h-[300px] lg:h-[410px] 3xs:w-100 lg:w-[30%] rounded-3xl overflow-hidden lg:order-2">
               <div className="w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2">
                 <img
                   className=" 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-fit object-right"
@@ -63,8 +72,12 @@ export const Collection = ({ Collections, Direction, Title }) => {
                 />
               </div>
             </div>
-          </div>
-          <div className={`3xs:w-100 lg:w-[60%] my-auto lg:order-${Direction.toLowerCase() === "left" ? "1" : "0" }`}>
+          )}
+          <div
+            className={`w-100 lg:w-[${
+              typeof Collection?.image === "undefined" ? "60%" : "60%"
+            }] my-auto lg:order-1`}
+          >
             <div className="hidden text-center h-25 mb-3 lg:block">
               <p className="my-1 fs-1 text-center title">
                 ~ {Collection?.name} ~
@@ -83,14 +96,18 @@ export const Collection = ({ Collections, Direction, Title }) => {
                           >
                             <div className="w-fit relative">
                               <Link
-                                to={
-                                  conditionIsMet
-                                    ? `http://localhost:3001/product?${CryptoJS?.AES?.encrypt(
-                                        item?._id,
-                                        process.env.REACT_APP_ENCRYPT_URL_SECRET
-                                      ).toString()}`
-                                    : "http://localhost:3002"
-                                }
+                                onClick={() => {
+                                  setIsOpenLoginModal(true);
+                                  
+                                }}
+                                // to={
+                                //   conditionIsMet
+                                //     ? `http://localhost:3001/product?${CryptoJS?.AES?.encrypt(
+                                //         item?._id,
+                                //         process.env.REACT_APP_ENCRYPT_URL_SECRET
+                                //       ).toString()}`
+                                //     : "http://localhost:3002"
+                                // }
                               >
                                 <img
                                   className="w-[250px] !h-[150px] object-cover shadow-1 rounded-3 "
@@ -131,14 +148,17 @@ export const Collection = ({ Collections, Direction, Title }) => {
                       >
                         <div className="w-fit relative">
                           <Link
-                            to={
-                              conditionIsMet
-                                ? `http://localhost:3001/product?${CryptoJS?.AES?.encrypt(
-                                    item?._id,
-                                    process.env.REACT_APP_ENCRYPT_URL_SECRET
-                                  ).toString()}`
-                                : "http://localhost:3002"
-                            }
+                            onClick={() => {
+                              setIsOpenLoginModal(true);
+                            }}
+                            // to={
+                            //   conditionIsMet
+                            //     ? `http://localhost:3001/product?${CryptoJS?.AES?.encrypt(
+                            //         item?._id,
+                            //         process.env.REACT_APP_ENCRYPT_URL_SECRET
+                            //       ).toString()}`
+                            //     : "http://localhost:3002"
+                            // }
                           >
                             <img
                               className="w-[250px] !h-[150px] object-cover shadow-1 rounded-3 "

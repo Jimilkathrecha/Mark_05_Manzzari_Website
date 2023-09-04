@@ -14,6 +14,7 @@ import { useState } from "react";
 function App() {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const [isOpenLoginModal, setIsOpenLoginModal] = useState(false);
+  const [isSkipLogin, setIsSkipLogin] = useState(false);
 
   //Preloader
   const [loading, setLoading] = useState(true);
@@ -35,6 +36,8 @@ function App() {
               <Home
                 isOpenLoginModal={isOpenLoginModal}
                 setIsOpenLoginModal={setIsOpenLoginModal}
+                isSkipLogin={isSkipLogin}
+                setIsSkipLogin={setIsSkipLogin}
               />
             }
           />
