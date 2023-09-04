@@ -114,32 +114,35 @@ export const Landingpage = () => {
         <div className="flex justify-center w-100 px-5 gap-20">
           <div className="w-[60%]">
             <div className="h-100 flex flex-col justify-center">
-              <div className="h-75 flex flex-col font-Philosopher justify-center">
+              {/* <div className="h-75 flex flex-col font-Philosopher justify-center">
                 <h1 className="text-7xl">READY FOR</h1>
                 <h1 className="text-7xl">
-                  <span className="tx-border">EVERY</span> OCCASION
+                <span className="tx-border">EVERY</span> OCCASION
                 </h1>
                 <button className="w-fit text-3xl border-2 border-brown px-3 py-2 rounded-full rounded-s-none mt-3 tx-brown">
-                  Shop Now
+                Shop Now
                 </button>
+              </div> */}
+              <div className="h-75 mt-4 flex flex-col font-Philosopher justify-center">
+                <img className="w-[75%] mx-auto " src="/images/Coming cover website.png" alt="" />
               </div>
-              <div className="flex h-25 gap-24">
+              <div className="flex h-25 mx-auto gap-24">
                 <div className="flex flex-col text-center">
-                  <h1 className="text-5xl">20k</h1>
-                  <h1 className="text-2xl text-gray-500">Products</h1>
+                  <h1 className="text-5xl">100+</h1>
+                  <h1 className="text-2xl text-gray-500">Stores Across India</h1>
                 </div>
                 <div className="flex flex-col text-center">
-                  <h1 className="text-5xl">50k</h1>
-                  <h1 className="text-2xl text-gray-500">New Clients</h1>
+                  <h1 className="text-5xl">500+</h1>
+                  <h1 className="text-2xl text-gray-500">Vendors &nbsp;</h1>
                 </div>
                 <div className="flex flex-col text-center">
-                  <h1 className="text-5xl">40k</h1>
-                  <h1 className="text-2xl text-gray-500">Recent Review</h1>
+                  <h1 className="text-5xl">100+</h1>
+                  <h1 className="text-2xl text-gray-500">Antique Jewelry </h1>
                 </div>
               </div>
             </div>
           </div>
-          <div className="w-25 -mt-[25px] hidden xl:block relative overflow-hidden">
+          <div className="w-25 -mt-[22px] hidden xl:block relative overflow-hidden">
             <div
               className="w-100"
               data-aos="fade-down"
