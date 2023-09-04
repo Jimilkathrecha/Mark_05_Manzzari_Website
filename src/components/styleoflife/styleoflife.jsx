@@ -130,12 +130,12 @@ export default function Styleoflife() {
             <Slider className='w-[80%] mx-auto d-md-block rounded-[15px] overflow-hidden' {...categories}>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/Try-1.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/Try-1.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/Try-2.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/Try-1.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>

@@ -25,6 +25,7 @@ import Slider from "react-slick";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCollectionAction } from "../../redux/actions/collection";
 import Category from "../../components/category/Category";
+import Supporters from "../../components/supporters/Supporters ";
 
 export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
   const Banners = {
@@ -62,7 +63,11 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
       <Header setIsOpenLoginModal={setIsOpenLoginModal} />
 
       {/* <Slider className="h-[80vh]" {...Banners}> */}
-      <div id="carouselExampleRide" class="carousel carousel-dark slide " data-bs-ride="true">
+      <div
+        id="carouselExampleRide"
+        class="carousel carousel-dark slide "
+        data-bs-ride="true"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
@@ -155,30 +160,23 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
       <Category />
       <Spotlight />
       <Collection
-        Direction="RTL"
+        Direction="LTR"
         Title="Manzzri's Fevorite"
         Collections={Collections}
       />
-      {/* <Favorite /> */}
+        {/* <Favorite /> */}
       <Collection
         Direction="RTL"
         Title="bacha Kadli"
-        Collections={Collections}
-      />
-      <Collection Direction="RTL" Title="Soulmates" Collections={Collections} />
-      <Collection
-        Direction="RTL"
-        Title="bacha Kadli"
-        Collections={Collections}
-      />
-      <Collection
-        Direction="RTL"
-        Title="Panner Jewells"
         Collections={Collections}
       />
       <Banner />
+      <Collection 
+      Direction="RTL" 
+      Title="Soulmates" 
+      Collections={Collections} />
       <Whyus />
-      {/* <Supporter /> */}
+      <Supporters />
       <Features />
       <Clientgallary />
       <Footer />

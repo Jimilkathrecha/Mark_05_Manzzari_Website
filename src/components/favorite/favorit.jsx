@@ -146,43 +146,6 @@ export const Favorite = () => {
                     </div>
                 </div>
             </div>
-            <div className="">
-                <Slider className="w-100 h-100" {...manzzrifav}>
-                    {product.map((product) => (
-                        <div key={product} className="w-100 h-100 border-0 p-2">
-                            <div className="d-flex gap-4 w-100 h-100 justify-center">
-                                <div className="w-[250px] hover:shadow-lg border-1 border-marun rounded-1 overflow-hidden">
-                                    <div className="w-fit relative">
-                                        <Link to="/product">
-                                            <img
-                                                className="w-[250px] !h-[150px] object-cover border-b-[1px] border-marun"
-                                                src={product.img}
-                                                alt=""
-                                            />
-                                        </Link>
-                                    </div>
-                                    <div className="p-[10px]">
-                                        <div className="">
-                                            <p className="uppercase fs-6 text-red-600">
-                                                Only 10 in Stock
-                                            </p>
-                                            <p className="col m-0 p-0 text-sm font-bold leading-6 text-gray-900 whitespace-nowrap">
-                                                {product.name}
-                                            </p>
-                                            <p className="col m-0 p-0 fs-7 font-semibold leading-6 text-gray-500">
-                                                ₹ 24607 <del className="tx-red">₹ 25902</del>
-                                            </p>
-                                        </div>
-                                        <p className="block m-0 p-0 fs-6 font-semibold leading-6 text-gray-900">
-                                            Women <span className="tx-marun">|</span> Earrings{" "}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
         </>
     );
 };
