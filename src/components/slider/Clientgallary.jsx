@@ -16,19 +16,19 @@ const Clientgallary = () => {
     },
     {
       id: 3,
-      name: "Annanya Shrof",
+      name: "Jackie Shrof",
       img: "https://i.pinimg.com/originals/fc/93/36/fc93365481d010bef0d29769bb21368c.jpg",
       rate: "⭐⭐⭐⭐",
     },
     {
       id: 4,
-      name: "Jacqueline fernandez",
+      name: "Jacqueline Rajpara",
       img: "https://instagram.famd5-3.fna.fbcdn.net/v/t39.30808-6/365579154_700479895442695_2893825911930280344_n.jpg?stp=c0.204.1639.1639a_dst-jpg_e15_s320x320&_nc_ht=instagram.famd5-3.fna.fbcdn.net&_nc_cat=107&_nc_ohc=Jq5dvcD-kPQAX_Hn1jT&edm=AOQ1c0wAAAAA&ccb=7-5&oh=00_AfBAldx8Js_j79SNBPx8LDg7bMMmrPdQfRHzOkmULucYsA&oe=64F8F61D&_nc_sid=8b3546",
       rate: "⭐⭐",
     },
     {
       id: 5,
-      name: "Alexandra Daddario",
+      name: "Alexandra Savani",
       img: "https://i.etsystatic.com/24860567/r/il/6cf64d/4099750935/il_794xN.4099750935_au3r.jpg",
       rate: "⭐⭐⭐",
     },
@@ -37,8 +37,8 @@ const Clientgallary = () => {
     <>
       <div className="w-100 mt-[100px] mb-5">
         <div className="text-center">
-          <p className="my-5 fs-1 text-center gallient-font fw-bold">
-            ~ Gallary ~
+          <p className="my-5 fs-1 text-center title">
+            ~ Gallery ~
           </p>
         </div>
         <div className="flex flex-wrap gap-3 w-100 md:w-[80%] justify-center mx-auto">
@@ -49,14 +49,14 @@ const Clientgallary = () => {
             >
               <div className="max-w-100 md:msx-w-[200px] h-[200px] rounded-lg object-cover overflow-hidden">
                 <img
-                  className="object-bottom"
+                  className="min-w-[200px] min-h-[200p] object-bottom"
                   src={item.img}
                   alt=""
                 />
               </div>
-              <div className="">
+              <div className="mt-2">
                 <p>Name : {item.name}</p>
-                <p className="flex justify-center">
+                <p className="flex">
                   <span className="hidden md:block">Review : </span>
                   {item.rate}
                 </p>

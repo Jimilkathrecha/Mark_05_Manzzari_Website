@@ -5,7 +5,7 @@ export default function Spotlight() {
     <>
       <div className="row w-[90%] mb-5 mx-auto ">
         <div className="">
-          <p className="my-5 fs-1 text-center gallient-font fw-bold">
+          <p className="my-5 fs-1 text-center title">
             ~ Spotlight ~
           </p>
         </div>
