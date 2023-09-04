@@ -22,7 +22,7 @@ const Supporters = () => {
             <div className="w-100 my-[150px]">
                 <div className="text-center">
                     <p className="my-5 fs-1 text-center gallient-font fw-bold">
-                        ~ Our Supporters ~
+                        Our Supporters
                     </p>
                 </div>
                 <div className="w-[80%] mx-auto flex flex-wrap gap-3 justify-center">

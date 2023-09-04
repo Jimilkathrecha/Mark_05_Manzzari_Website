@@ -19,7 +19,7 @@ import Kadli from "../../components/slider/kadli";
 import Clientgallary from "../../components/slider/Clientgallary";
 import Whyus from "../about/Whyus";
 import { Features } from "../../components/features/Features";
-import { Favorite } from "../../components/favorite/favorit";
+import { Favorite } from "../../components/favourite/Favourite";
 import Modal from "../../components/models/modal";
 import Slider from "react-slick";
 import { useDispatch, useSelector } from "react-redux";
@@ -68,7 +68,7 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
         class="carousel carousel-dark slide "
         data-bs-ride="true"
       >
-        <div class="carousel-indicators">
+        {/* <div class="carousel-indicators">
           <button
             type="button"
             data-bs-target="#carouselExampleRide"
@@ -113,14 +113,14 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
             data-bs-slide-to="6"
             aria-label="Slide 7"
           ></button>
-        </div>
+        </div> */}
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <div className="flex-none w-full h-full snap-center border">
+            <div className="flex-none w-full h-full snap-center">
               <Landingpage />
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="20000">
+          {/* <div class="carousel-item" data-bs-interval="20000">
             <div className="flex-none w-full h-full snap-center border">
               <Landingpage2 />
             </div>
@@ -149,7 +149,7 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
             <div className="flex-none w-full h-full snap-center border">
               <Landingpage7 />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -157,28 +157,25 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
       {/* </Slider> */}
 
       <Styleoflife />
+      <Features />
       <Category />
-      <Spotlight />
-      <Collection
-        Direction="LTR"
+      {/* <Collection
+        Direction="left"
         Title="Manzzri's Fevorite"
         Collections={Collections}
-      />
-        {/* <Favorite /> */}
-      <Collection
-        Direction="RTL"
+      /> */}
+      <Spotlight />
+      {/* <Favorite /> */}
+      {/* <Collection
+        Direction="right"
         Title="bacha Kadli"
         Collections={Collections}
-      />
+      /> */}
       <Banner />
-      <Collection 
-      Direction="RTL" 
-      Title="Soulmates" 
-      Collections={Collections} />
+      {/* <Collection Direction="left" Title="Soulmates" Collections={Collections} /> */}
       <Whyus />
       <Supporters />
-      <Features />
-      <Clientgallary />
+      {/* <Clientgallary /> */}
       <Footer />
       <Modal
         isOpenLoginModal={isOpenLoginModal}

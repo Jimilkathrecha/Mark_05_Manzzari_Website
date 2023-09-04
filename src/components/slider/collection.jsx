@@ -15,14 +15,6 @@ import { addCompareDataAction } from "../../redux/actions/compare";
 import { confirmAlert } from "react-confirm-alert";
 import CryptoJS from "crypto-js";
 
-const banner = {
-  infinite: true,
-  arrows: false,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoPlay: false,
-  autoPlaySpeed: 4000,
-};
 const products = {
   infinite: true,
   arrows: false,
@@ -56,23 +48,23 @@ export const Collection = ({ Collections, Direction, Title }) => {
     <>
       <div className="px-3">
         <div className="flex flex-col mt-[100px] lg:flex-row px-2 justify-center gap-5 w-100">
-          <div className="text-center h-25 lg:hidden">
-            <p className="fs-1 text-center gallient-font fw-bold">
-              ~ {Collection?.name} ~
-            </p>
-          </div>
-          <div
-            className="3xs:h-[250px] xs:h-[300px] lg:h-[410px] 3xs:w-100 lg:w-[30%] rounded-3xl overflow-hidden lg:order-2"
-          >
-            <div className="w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2">
-              <img
-                className=" 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-fit object-right"
-                src="https://www.tanishq.co.in/on/demandware.static/-/Sites/default/dw2e4d2b6b/586x430-copy-8.jpg"
-                alt=""
-              />
+          <div className={`lg:w-[30%] lg:order-${Direction.toLowerCase() === "right" ? "1" : "0" }`}>
+            <div className="text-center h-25 lg:hidden">
+              <p className="fs-1 text-center gallient-font fw-bold">
+                {Collection?.name}
+              </p>
+            </div>
+            <div className="h-100 w-100 rounded-3xl overflow-hidden">
+              <div className="w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2">
+                <img
+                  className=" 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-fit object-right"
+                  src="https://www.tanishq.co.in/on/demandware.static/-/Sites/default/dw2e4d2b6b/586x430-copy-8.jpg"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
-          <div className="3xs:w-100 lg:w-[60%] my-auto lg:order-1">
+          <div className={`3xs:w-100 lg:w-[60%] my-auto lg:order-${Direction.toLowerCase() === "left" ? "1" : "0" }`}>
             <div className="hidden text-center h-25 mb-3 lg:block">
               <p className="my-1 fs-1 text-center title">
                 ~ {Collection?.name} ~

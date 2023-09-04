@@ -110,7 +110,7 @@ export const Landingpage = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block w-100 mt-[100px] h-[90vh]">
+      <div className="hidden md:block w-100 mt-[100px] h-[80vh]">
         <div className="flex justify-center w-100 px-5 gap-20">
           <div className="w-[60%]">
             <div className="h-100 flex flex-col justify-center">
