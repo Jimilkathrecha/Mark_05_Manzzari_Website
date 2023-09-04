@@ -27,7 +27,12 @@ import { getAllCollectionAction } from "../../redux/actions/collection";
 import Category from "../../components/category/Category";
 import Supporters from "../../components/supporters/Supporters ";
 
-export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
+export default function Home({
+  isSkipLogin,
+  setIsSkipLogin,
+  isOpenLoginModal,
+  setIsOpenLoginModal,
+}) {
   const Banners = {
     infinite: true,
     arrows: true,
@@ -160,21 +165,32 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
       <Category />
       <Spotlight />
       <Collection
+        isSkipLogin={isSkipLogin}
+        setIsSkipLogin={setIsSkipLogin}
+        setIsOpenLoginModal={setIsOpenLoginModal}
         Direction="LTR"
         Title="Manzzri's Fevorite"
         Collections={Collections}
       />
-        {/* <Favorite /> */}
+      {/* <Favorite /> */}
       <Collection
+      
+        isSkipLogin={isSkipLogin}
+        setIsSkipLogin={setIsSkipLogin}
+        setIsOpenLoginModal={setIsOpenLoginModal}
         Direction="RTL"
         Title="bacha Kadli"
         Collections={Collections}
       />
       <Banner />
-      <Collection 
-      Direction="RTL" 
-      Title="Soulmates" 
-      Collections={Collections} />
+      <Collection
+        isSkipLogin={isSkipLogin}
+        setIsSkipLogin={setIsSkipLogin}
+        setIsOpenLoginModal={setIsOpenLoginModal}
+        Direction="RTL"
+        Title="Soulmates"
+        Collections={Collections}
+      />
       <Whyus />
       <Supporters />
       <Features />
