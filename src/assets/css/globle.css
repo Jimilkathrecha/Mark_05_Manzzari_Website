@@ -84,6 +84,7 @@
     --bs-baby-pink: #f2e9e9;
     --bs-dark-pink: #efe3e3;
     --bs-black: rgb(21, 21, 21);
+    --bs-sky-blue: #00484f;
 
     --main-fcolor: #8a6e35;
     --bor-color: #947944;
@@ -237,6 +238,9 @@ body {
 
 .bs-light-brown {
     background-color: var(--col-bg2);
+}
+.bs-sky-blue {
+    background-color: var(--bs-sky-blue);
 }
 
 /* ================================ */
@@ -581,6 +585,17 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+.title {
+    /* font-family: 'Noticia Text', serif !important; */
+    /* font-family: 'Philosopher', sans-serif !important; */
+    /* font-family: 'lucida-bright-regular', sans-serif !important; */
+    font-family: 'Cormorant Garamond', serif !important;
+    /* font-family: 'Lobster Two', 'cursive' !important; */
+    /* font-family: 'Raleway', sans-serif !important; */
+    font-weight: 800 !important;
+    
+}
+
 /* Firefox */
 input[type="number"] {
     -moz-appearance: textfield;
@@ -815,7 +830,7 @@ button:hover {
 }
 
 .onScrollNavbar {
-    border-top: 2px solid var(--bor-color);
+    border-top: 2px solid var(--bs-black);
     transition: all 0.2s;
 }
 
@@ -831,7 +846,7 @@ button:hover {
     top: 4%;
     transition: 0.8s;
     z-index: 99999;
-    border-bottom: 2px solid var(--bor-color);
+    border-bottom: 2px solid var(--bs-black);
     backdrop-filter: blur(10px);
 }
 
@@ -843,7 +858,7 @@ button:hover {
     position: absolute;
     top: -6px;
     left: 0;
-    background: var(--bor-color);
+    background: var(--bs-black);
 }
 
 .dot-br::after {
@@ -854,7 +869,7 @@ button:hover {
     position: absolute;
     bottom: -6px;
     right: 0;
-    background: var(--bor-color);
+    background: var(--bs-black);
 }
 
 .dot-bl::before {
@@ -865,7 +880,7 @@ button:hover {
     position: absolute;
     bottom: -6px;
     left: 0;
-    background: var(--bor-color);
+    background: var(--bs-black);
 }
 
 .dot-tr::after {
@@ -876,7 +891,7 @@ button:hover {
     position: absolute;
     top: -6px;
     right: 0;
-    background: var(--bor-color);
+    background: var(--bs-black);
 }
 
 .container-nav {
@@ -902,12 +917,6 @@ button:hover {
 
 .nav-icons {
     font-size: 28px;
-}
-
-.container-nav a,
-.nav-icons a {
-    text-decoration: none;
-    color: var(--bor-color);
 }
 
 .grab {

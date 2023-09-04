@@ -39,7 +39,11 @@ module.exports = {
       },
       fontFamily: {
         'noticia': ['"Noticia Text"', 'serif'],
-        'Philosopher': ['"Philosopher"', 'sans- serif']
+        'Philosopher': ['"Philosopher"', 'sans- serif'],
+        'lucida-bright-regular': ['"lucida-bright-regular"', 'sans-serif'],
+        'raleway': ['"Raleway"', 'sans-serif'],
+        'Cormorant Garamond': ['"Cormorant Garamond"', 'serif'],
+        'Lobster Two': ['"Lobster Two"', 'cursive'],
       },
       colors: {
         custom: {

@@ -149,9 +149,7 @@ export default function Kadli() {
       <div className="px-3 my-5 py-3">
         <div className="flex flex-col lg:flex-row px-2 justify-center gap-5 w-100">
           <div className="block lg:hidden text-center h-25 mb-3">
-            <p className="my-1 fs-1 text-center gallient-font fw-bold">
-              ~ Kadli Collection ~
-            </p>
+            <p className="my-1 fs-1 text-center title">~ Kadli Collection ~</p>
           </div>
           <Slider
             className="3xs:h-[250px] xs:h-[300px] lg:h-[410px] 3xs:w-100 lg:w-[30%] rounded-3xl overflow-hidden"
@@ -174,9 +172,7 @@ export default function Kadli() {
           </Slider>
           <div className="3xs:w-100 lg:w-[60%] my-auto">
             <div className="hidden lg:block text-center h-25 mb-3">
-              <p className="my-1 fs-1 text-center gallient-font fw-bold">
-                ~ Kadli Collection ~
-              </p>
+              <p className="my-1 fs-1 text-center title">~ Kadli Collection ~</p>
             </div>
             <div className="">
               <Slider className="w-100 h-100" {...kadli}>
