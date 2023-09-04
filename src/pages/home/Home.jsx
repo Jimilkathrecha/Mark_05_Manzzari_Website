@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Landingpage,
   Landingpage2,
@@ -8,13 +8,12 @@ import {
   Landingpage6,
   Landingpage7,
 } from "../../components/landingpage/Landingpage";
-import Categori from "../../components/categori/categori";
 import Banner from "../../components/slider/offers";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/Header";
 import Styleoflife from "../../components/styleoflife/styleoflife";
 // import Modal from '../../components/models/modal'
-import { Soulmates } from "../../components/slider/soulmates";
+import { Collection } from "../../components/slider/collection";
 import Spotlight from "../../components/spotlights/Spotlight";
 import Kadli from "../../components/slider/kadli";
 import Clientgallary from "../../components/slider/Clientgallary";
@@ -23,6 +22,9 @@ import { Features } from "../../components/features/Features";
 import { Favorite } from "../../components/favorite/favorit";
 import Modal from "../../components/models/modal";
 import Slider from "react-slick";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllCollectionAction } from "../../redux/actions/collection";
+import Category from "../../components/category/Category";
 
 export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
   const Banners = {
@@ -37,6 +39,23 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
     centerMode: true,
     centerPadding: "0px",
   };
+
+  const dispatch = useDispatch();
+  const collectionState = useSelector((state) => state?.collectionState);
+  const [Collections, setCollections] = useState([]);
+
+  useEffect(() => {
+    dispatch(getAllCollectionAction());
+  }, [dispatch]);
+
+  useEffect(() => {
+    const collections = collectionState?.getAllCollection?.filter(
+      (collection) => {
+        return collection?.is_active === true;
+      }
+    );
+    setCollections(collections);
+  }, [collectionState?.getAllCollection]);
 
   return (
     <>
@@ -70,11 +89,30 @@ export default function Home({ isOpenLoginModal, setIsOpenLoginModal }) {
       {/* </Slider> */}
 
       <Styleoflife />
-      <Categori />
+      <Category />
       <Spotlight />
-      <Favorite />
-      <Kadli />
-      <Soulmates />
+      <Collection
+        Direction="RTL"
+        Title="Manzzri's Fevorite"
+        Collections={Collections}
+      />
+      {/* <Favorite /> */}
+      <Collection
+        Direction="RTL"
+        Title="bacha Kadli"
+        Collections={Collections}
+      />
+      <Collection Direction="RTL" Title="Soulmates" Collections={Collections} />
+      <Collection
+        Direction="RTL"
+        Title="bacha Kadli"
+        Collections={Collections}
+      />
+      <Collection
+        Direction="RTL"
+        Title="Panner Jewells"
+        Collections={Collections}
+      />
       <Banner />
       <Whyus />
       {/* <Supporter /> */}

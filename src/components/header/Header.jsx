@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header({   setIsOpenLoginModal    }) {
+export default function Header({ setIsOpenLoginModal }) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -50,16 +50,19 @@ export default function Header({   setIsOpenLoginModal    }) {
                   <p className="sans-regular fs-6">CONTACT</p>
                 </Link>
                 <Link to="/data">
-                  <p className="sans-regular fs-6">Data</p>
+                  <p className="sans-regular fs-6">DATA</p>
                 </Link>
-                <Link onClick={()=>setIsOpenLoginModal(true)}>
-                  <p className="sans-regular fs-6">Login</p>
+                <Link onClick={() => setIsOpenLoginModal(true)}>
+                  <p className="sans-regular fs-6">LOGIN</p>
                 </Link>
               </div>
             </div>
           </div>
           <div className="nav-icons  d-flex gap-3">
-            <p className="d-flex align-items-center" onClick={()=>setIsOpenLoginModal(true)}>
+            <p
+              className="d-flex align-items-center"
+              onClick={() => setIsOpenLoginModal(true)}
+            >
               <span className="material-symbols-outlined fs-3">search</span>
             </p>
             <Link to="/favorite">
