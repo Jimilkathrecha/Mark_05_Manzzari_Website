@@ -15,10 +15,18 @@ import { addCompareDataAction } from "../../redux/actions/compare";
 import { confirmAlert } from "react-confirm-alert";
 import CryptoJS from "crypto-js";
 
-const soulmate2 = {
+const banner = {
   infinite: true,
   arrows: false,
   slidesToShow: 1,
+  slidesToScroll: 1,
+  autoPlay: false,
+  autoPlaySpeed: 4000,
+};
+const products = {
+  infinite: true,
+  arrows: false,
+  slidesToShow: 3,
   slidesToScroll: 1,
   autoPlay: false,
   autoPlaySpeed: 4000,
@@ -53,9 +61,8 @@ export const Collection = ({ Collections, Direction, Title }) => {
               ~ {Collection?.name} ~
             </p>
           </div>
-          <Slider
+          <div
             className="3xs:h-[250px] xs:h-[300px] lg:h-[410px] 3xs:w-100 lg:w-[30%] rounded-3xl overflow-hidden lg:order-2"
-            {...soulmate2}
           >
             <div className="w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2">
               <img
@@ -64,22 +71,15 @@ export const Collection = ({ Collections, Direction, Title }) => {
                 alt=""
               />
             </div>
-            <div className="w-100 rounded-3xl pointer-events-none overflow-hidden border-0 px-2">
-              <img
-                className=" 3xs:h-[250px] xs:h-[300px] lg:h-[410px] w-100 rounded-3xl pointer-events-none border-0 object-cover object-left"
-                src="https://cdn.caratlane.com/media/static/images/V4/2023/CL/07-JULY/AppBanner/OGE/01/Mobile_768x890.webp"
-                alt=""
-              />
-            </div>
-          </Slider>
+          </div>
           <div className="3xs:w-100 lg:w-[60%] my-auto lg:order-1">
             <div className="hidden text-center h-25 mb-3 lg:block">
-              <p className="my-1 fs-1 text-center gallient-font fw-bold">
+              <p className="my-1 fs-1 text-center title">
                 ~ {Collection?.name} ~
               </p>
             </div>
             <div className={isSlider ? "d-block" : "d-none"}>
-              <Slider className="w-100 h-100" {...soulmate2}>
+              <Slider className="w-100 h-100" {...products}>
                 {Array?.isArray(Collection?.itemsIds) &&
                 Collection?.itemsIds?.length > 0
                   ? Collection?.itemsIds?.map((item) => {

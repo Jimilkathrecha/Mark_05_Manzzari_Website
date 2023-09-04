@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/footer";
 import { Link } from "react-router-dom";
-import Category from "../../components/category/Category";
+import Category from "../../components/category/Category.jsx";
 
 export default function Allcategories() {
   return (
