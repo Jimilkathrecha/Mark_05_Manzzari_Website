@@ -16,7 +16,7 @@ import Spotlight from "../../components/spotlights/Spotlight";
 import Kadli from "../../components/slider/kadli";
 import Whyus from "../about/Whyus";
 import { Features } from "../../components/features/Features";
-import Modal from "../../components/models/modal";
+import Modal from "../../components/models/Modal";
 import Category from "../../components/category/Category";
 import Supporters from "../../components/supporters/Supporters ";
 // import Slider from "react-slick";
@@ -32,6 +32,10 @@ export default function Home({
   setIsSkipLogin,
   isOpenLoginModal,
   setIsOpenLoginModal,
+  isOpenOtpModal,
+  setIsOpenOtpModal,
+  isOpenRegModal,
+  setIsOpenRegModal,
 }) {
   const Banners = {
     infinite: true,
@@ -161,10 +165,11 @@ export default function Home({
       {/* <div className="flex snap-x snap-mandatory scroll-d-none overflow-auto w-200 h-[100vh]"></div> */}
       {/* </Slider> */}
 
-      <Styleoflife />
+        
+      <Styleoflife setIsOpenLoginModal={setIsOpenLoginModal} />
       <Features />
-      <Category />
-      <Spotlight />
+      <Category setIsOpenLoginModal={setIsOpenLoginModal}/>
+      <Spotlight setIsOpenLoginModal={setIsOpenLoginModal}/>
        {/*<Collection
         isSkipLogin={isSkipLogin}
         setIsSkipLogin={setIsSkipLogin}
@@ -181,7 +186,7 @@ export default function Home({
         Title="bacha Kadli"
         Collections={Collections}
       /> */}
-      <Banner />
+      <Banner setIsOpenLoginModal={setIsOpenLoginModal}/>
        {/*<Collection
         isSkipLogin={isSkipLogin}
         setIsSkipLogin={setIsSkipLogin}
@@ -197,6 +202,10 @@ export default function Home({
       <Modal
         isOpenLoginModal={isOpenLoginModal}
         setIsOpenLoginModal={setIsOpenLoginModal}
+        isOpenOtpModal={isOpenOtpModal}
+        setIsOpenOtpModal={setIsOpenOtpModal}
+        isOpenRegModal={isOpenRegModal}
+        setIsOpenRegModal={setIsOpenRegModal}
       />
     </>
   );
