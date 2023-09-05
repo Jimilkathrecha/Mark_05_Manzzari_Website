@@ -181,7 +181,6 @@ export default function Home({
         Title="bacha Kadli"
         Collections={Collections}
       /> */}
-      <Spotlight />
       <Banner />
        {/*<Collection
         isSkipLogin={isSkipLogin}
