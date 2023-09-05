@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function Spotlight() {
+export default function Spotlight({ setIsOpenLoginModal }) {
+
+  const handleOpenModal = () => {
+    setIsOpenLoginModal(true);
+  }
+
   return (
     <>
       <div className="row w-[90%] mt-[100px] mb-5 mx-auto ">
@@ -17,7 +22,7 @@ export default function Spotlight() {
             data-aos-duration="2000"
             data-aos-anchor-placement="bottom-bottom"
           >
-            <div className="rounded-3 overflow-hidden">
+            <div className="rounded-3 overflow-hidden" onClick={handleOpenModal}>
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/Platinum-chain.jpg"
@@ -26,14 +31,14 @@ export default function Spotlight() {
             </div>
           </div>
           <div className="w-[100%] sm:w-[24%] d-flex flex-column gap-2 py-1">
-            <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
+            <div className="rounded-3 overflow-hidden" data-aos="zoom-in" data-aos-duration="1800" onClick={handleOpenModal}>
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/platinum-ring.jpg"
                 alt=""
               />
             </div>
-            <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
+            <div className="rounded-3 overflow-hidden" data-aos="zoom-in" data-aos-duration="1800" onClick={handleOpenModal}>
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/gestone-jewellery-Ring.jpg"
@@ -42,14 +47,14 @@ export default function Spotlight() {
             </div>
           </div>
           <div className="w-[100%] sm:w-[24%] d-flex flex-column gap-2 py-1">
-            <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
+            <div className="rounded-3 overflow-hidden" data-aos="zoom-in" data-aos-duration="1800" onClick={handleOpenModal}> 
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/gestone-jewellery-Studs.jpg"
                 alt=""
               />
             </div>
-            <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
+            <div className="rounded-3 overflow-hidden" data-aos="zoom-in" data-aos-duration="1800" onClick={handleOpenModal}>
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/Platinum-bracelet.jpg"
@@ -63,7 +68,7 @@ export default function Spotlight() {
             data-aos-duration="2000"
             data-aos-anchor-placement="bottom-bottom"
           >
-            <div className="rounded-3 overflow-hidden">
+            <div className="rounded-3 overflow-hidden" onClick={handleOpenModal}>
               <img
                 className="zoom-in w-100"
                 src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/gestone-pendant.jpg"

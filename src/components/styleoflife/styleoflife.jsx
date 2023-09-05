@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 
-export default function Styleoflife() {
+export default function Styleoflife({setIsOpenLoginModal}) {
+
+
     const categories = {
         arrows: false,
         slidesToShow: 5,
@@ -123,33 +125,37 @@ export default function Styleoflife() {
         ],
     };
 
+    const handleOpenModal = () => {
+        setIsOpenLoginModal(true);
+    }
+
     return (
         <>
             <p className="mt-[40px] lg:mt-[100px] mb-3 text-center fs-1 title">Style of Life</p>
 
             <Slider className='w-[80%] mx-auto d-md-block rounded-[15px] overflow-hidden' {...categories}>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
-                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
+                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center' onClick={handleOpenModal}>
                         <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-3.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
-                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
+                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center' onClick={handleOpenModal}>
                         <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-4.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
-                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
+                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center' onClick={handleOpenModal}>
                         <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-5.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
-                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
+                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center' onClick={handleOpenModal}>
                         <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-7.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
-                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
+                    <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center' onClick={handleOpenModal}>
                         <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-8.png" alt="" />
                     </div>
                 </div>

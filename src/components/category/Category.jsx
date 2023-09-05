@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllCategoryAction } from "../../redux/actions/category";
 
-export default function Category() {
+export default function Category({setIsOpenLoginModal}) {
     // const dispatch = useDispatch();
     // const { getAllCategory, addCategory, updateCategory, deleteCategory } =
     //     useSelector((state) => state.categoryState);
@@ -106,6 +106,10 @@ export default function Category() {
         },
     ];
 
+    const handleOpenModal = () => {
+        setIsOpenLoginModal(true);
+    }
+
     return (
         <>
             <div className="w-100">
@@ -117,7 +121,7 @@ export default function Category() {
                 <div className="flex flex-col">
                     <div className="justify-between xl:flex">
                         <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-4 justify-center">
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -134,7 +138,7 @@ export default function Category() {
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex gap-3 my-4 justify-center">
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="flex flex-col justify-center align-items-center my-4">
                                     <h3 className="text-center mb-2 font-semibold text-lg px-1">
                                         {category[1]?.name}
@@ -152,8 +156,8 @@ export default function Category() {
                                 </div>
                             </div>
                         </div>
-                        <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-4 justify-center">
+                        <div className="justify-between gap-4 my-3 xl:flex-col md:flex" >
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="img2 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -170,7 +174,7 @@ export default function Category() {
                                     </h3>
                                 </div>
                             </div>
-                            <div className="flex gap-3 my-4 justify-center">
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="flex flex-col justify-center align-items-center my-4">
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]"></p>
@@ -189,7 +193,7 @@ export default function Category() {
                             </div>
                         </div>
                         <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-4 justify-center">
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -207,7 +211,7 @@ export default function Category() {
                                 </div>
                             </div>
 
-                            <div className="flex gap-3 my-4 justify-center">
+                            <div className="flex gap-3 my-4 justify-center" onClick={handleOpenModal}>
                                 <div className="flex flex-col justify-center align-items-center my-4">
                                     <h3 className="text-center mb-2 font-semibold text-lg px-1">
                                         {category[5]?.name}

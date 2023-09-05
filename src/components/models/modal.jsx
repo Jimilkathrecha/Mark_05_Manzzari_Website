@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginAction } from "../../redux/actions/auth";
 import { LandingLogInSchema } from "../schema";
+import { useNavigate } from "react-router-dom";
 
-export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
+export default function Modal({ isOpenLoginModal, setIsOpenLoginModal, isOpenOtpModal, setIsOpenOtpModal, isOpenRegModal, setIsOpenRegModal, }) {
   const initialLogIn = {
     phone_no: "",
   };
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const dispatch = useDispatch();
+  const navigator = useNavigate()
 
   const handleChangeLoginData = (e) => {
     const { name, value } = e.target;
@@ -30,27 +32,25 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
     },
   });
 
+  const handleRedirectData = () =>{
+    setIsOpenLoginModal(false)
+    // navigator("https://manzzari-store.vercel.app/")
+  }
+
   return (
     <>
       <div className="signup">
         <div
-          className={`modal md:!min-w-[600px] px-3 d-${
-            isOpenLoginModal ? "block" : "none"
-          } `}
-          id="ModalForm"
-          tabIndex="-1"
-          aria-labelledby="ModalFormLabel"
-          aria-hidden="true"
+          className={`modal md:!min-w-[600px] px-3 d-${isOpenLoginModal ? "block" : "none"
+            } `}
         >
           <div className="modal-dialog modal-dialog-centered md:min-w-[600px]">
             <div className="modal-content m-auto rounded-x">
               <div className="modal-body p-0 flex">
                 <button
                   type="button"
-                  onClick={() => setIsOpenLoginModal(false)}
+                  onClick={() => handleRedirectData()}
                   className="absolute end-0 p-2 btn-close btn-close-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
                 >
                   <i className="fa fa-times" aria-hidden="true"></i>
                 </button>
@@ -99,15 +99,14 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
                         <input
                           type="text"
                           className={`peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          ${
-                            formik.touched?.phone_no && formik.errors?.phone_no
+                          ${formik.touched?.phone_no && formik.errors?.phone_no
                               ? "is-invalid"
                               : ""
-                          }`}
+                            }`}
                           id="exampleFormControlInput1"
                           onChange={handleChangeLoginData}
                           onBlur={formik.handleBlur}
-                          // value={formik.values?.phone_no}
+                        // value={formik.values?.phone_no}
                         />
                         <label
                           for="exampleFormControlInput1"
@@ -159,21 +158,15 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
 
       <div className="otp-modal">
         <div
-          className={`modal d-${isOpenLoginModal ? "block" : "none"}`}
-          id="ModalForm2"
-          tabIndex="-1"
-          aria-labelledby="ModalFormLabel"
-          aria-hidden="true"
+          className={`modal d-${isOpenOtpModal ? "block" : "none"}`}
         >
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body d-flex">
                 <button
                   type="button"
-                  onClick={() => setIsOpenLoginModal(false)}
+                  onClick={() => setIsOpenOtpModal(false)}
                   className="absolute end-0 p-2 btn-close btn-close-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
                 >
                   <i className="fa fa-times" aria-hidden="true"></i>
                 </button>
@@ -255,21 +248,15 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
 
       <div className="almost">
         <div
-          className={`modal d-${isOpenLoginModal ? "block" : "none"}`}
-          id="ModalForm3"
-          tabIndex="-1"
-          aria-labelledby="ModalFormLabel"
-          aria-hidden="true"
+          className={`modal d-${isOpenRegModal ? "block" : "none"}`}
         >
           <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
               <div className="modal-body d-flex">
                 <button
                   type="button"
-                  onClick={() => setIsOpenLoginModal(false)}
+                  onClick={() => setIsOpenRegModal(false)}
                   className="absolute end-0 p-2 btn-close btn-close-white"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
                 >
                   <i className="fa fa-times" aria-hidden="true"></i>
                 </button>
@@ -330,15 +317,14 @@ export default function Modal({ isOpenLoginModal, setIsOpenLoginModal }) {
                         <input
                           type="text"
                           className={`peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                          ${
-                            formik.touched?.phone_no && formik.errors?.phone_no
+                          ${formik.touched?.phone_no && formik.errors?.phone_no
                               ? "is-invalid"
                               : ""
-                          }`}
+                            }`}
                           id="exampleFormControlInput1"
                           onChange={handleChangeLoginData}
                           onBlur={formik.handleBlur}
-                          // value={formik.values?.phone_no}
+                        // value={formik.values?.phone_no}
                         />
                         <label
                           for="exampleFormControlInput1"
