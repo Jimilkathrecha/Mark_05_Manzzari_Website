@@ -6,25 +6,11 @@ export const Features = () => {
       <div className="mx-3 px-3 my-[150px]">
         <div className="flex flex-wrap gap-4 text-center w-100 justify-evenly items-center">
           <div className="min-w-[100px]">
-            <img
-              className="mx-auto my-2"
-              alt="Assured Lifetime Jewellery Maintenance"
-              src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/assured-lifetime-maintenances2.svg"
-            />
-            <h3>
-              <a title="">
-                Assured Lifetime
-                <br />
-                Maintenance
-              </a>
-            </h3>
-          </div>
-          <div className="min-w-[100px]">
             <a title="Easy Exchange">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="Easy Exchange of Jewellery"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/easy-exchange2.svg"
+                src="/images/Features/replce.png"
               />
             </a>
             <h3>
@@ -38,9 +24,9 @@ export const Features = () => {
           <div className="min-w-[100px]">
             <a title="Your Jewellery is Insured">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="Your Jewellery is Insured"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/your-jewellery-is-Insured2.svg"
+                src="/images/Features/insu.png"
               />
             </a>
             <h3>
@@ -54,9 +40,9 @@ export const Features = () => {
           <div className="min-w-[100px]">
             <a title="14 Days Return Policy">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="14 Days Jewellery Return Policy"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/14-days-return-policy2.svg"
+                src="/images/Features/return.png"
               />
             </a>
             <h3>
@@ -70,9 +56,9 @@ export const Features = () => {
           <div className="min-w-[100px]">
             <a title="Tested &amp; Certified Diamonds">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="Tested and Certified Diamonds"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/Only_Certified_Jewellery-012.svg"
+                src="/images/Features/Certified.png"
               />
             </a>
             <h3>
@@ -86,9 +72,9 @@ export const Features = () => {
           <div className="min-w-[100px]">
             <a title="Complete Transparency">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="Complete Jewellery Transparency"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/complete-transparency1.svg"
+                src="/images/Features/trans.png"
               />
             </a>
             <h3>
@@ -100,27 +86,11 @@ export const Features = () => {
             </h3>
           </div>
           <div className="min-w-[100px]">
-            <a title="Zero Deduction Gold Exchange">
-              <img
-                className="mx-auto my-2"
-                alt="Zero Deduction Gold Exchange"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/zero-deduction-gold-exchange2.svg"
-              />
-            </a>
-            <h3>
-              <a title="Zero Deduction Gold Exchange">
-                Zero Deduction
-                <br />
-                Gold Exchange
-              </a>
-            </h3>
-          </div>
-          <div className="min-w-[100px]">
             <a title="BIS 916 Hallmarked Pure Gold">
               <img
-                className="mx-auto my-2 !w-[68px]"
+                className="mx-auto my-2 !w-[80px]"
                 alt="BIS 916 Hallmarked Pure Gold"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/100-Huid.svg"
+                src="/images/Features/BIS.png"
               />
             </a>
             <h3>
@@ -134,9 +104,9 @@ export const Features = () => {
           <div className="min-w-[100px]">
             <a title="Guaranteed Buyback">
               <img
-                className="mx-auto my-2"
+                className="w-[70px] mx-auto my-2"
                 alt="Guaranteed Jewellery Buyback"
-                src="https://www.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2020/02_feb/malabar-promise/online-promise/svg/guaranteed-buyback2.svg"
+                src="/images/Features/buy back.png"
               />
             </a>
             <h3>

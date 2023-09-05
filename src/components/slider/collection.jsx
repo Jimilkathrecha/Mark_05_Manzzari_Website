@@ -15,6 +15,37 @@ import { addCompareDataAction } from "../../redux/actions/compare";
 import { confirmAlert } from "react-confirm-alert";
 import CryptoJS from "crypto-js";
 
+<<<<<<< HEAD
+const products = {
+  infinite: true,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoPlay: false,
+  autoPlaySpeed: 4000,
+};
+
+export const Collection = ({ Collections, Direction, Title }) => {
+  // const dispatch = useDispatch();
+
+  // const [Collection, setCollection] = useState();
+  // const [isSlider, setIsSlider] = useState(false);
+
+  // const conditionIsMet = true; // Change this condition as needed
+
+  // useEffect(() => {
+  //   const collection = Collections?.find((collection) => {
+  //     return collection?.name?.toLowerCase() === Title?.toLowerCase();
+  //   });
+  //   setCollection(collection);
+  //   if (collection?.itemsIds?.length > 3) {
+  //     setIsSlider(true);
+  //   } else {
+  //     setIsSlider(false);
+  //   }
+  // }, [Collections, Title]);
+
+=======
 export const Collection = ({
   setIsOpenLoginModal,
   Collections,
@@ -53,9 +84,10 @@ export const Collection = ({
     autoPlay: false,
     autoPlaySpeed: 4000,
   };
+>>>>>>> b10b8243c2871968497050f17a9745b5e771461a
   return (
     <>
-      <div className="px-3">
+      {/* <div className="px-3">
         <div className="flex flex-col mt-[100px] lg:flex-row px-2 justify-center gap-5 w-100">
           <div className="text-center h-25 lg:hidden">
             <p className="fs-1 text-center gallient-font fw-bold">
@@ -188,7 +220,7 @@ export const Collection = ({
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

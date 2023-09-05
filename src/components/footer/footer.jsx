@@ -9,10 +9,41 @@ export default function Footer() {
                     <img className='w-100 blur-[7px]' src="https://img.freepik.com/free-vector/elegant-shubh-deepavali-festival-banner-with-text-space-vector_1017-40299.jpg?w=1380&t=st=1693807725~exp=1693808325~hmac=d512d4e36223d47693b133f80e8b4af65715aae11ffc7dd0dade61cde00f53cb" alt="" />
                 </div>
                 <div className="mx-2 md:mx-5">
-                    <div className="d-flex py-4 px-[12%] flex-wrap justify-content-between align-items-center ">
+                    <div className="d-flex py-4 px-[7%] flex-wrap justify-content-between ">
+                        <div className="">
+                            <h4 className="tx-yellow mt-1 mb-4 ps-2 fs-3">Manzzri Jewels</h4>
+                            <ul className="ps-0 fs-13">
+                                <li className="py-2 flex mb-2">
+                                    <div className="">
+                                        <i className="fas fa-home me-3"></i>
+                                    </div>
+                                    <div>
+                                        <p>204 - Raj Plaza, Palace Road,
+                                            <br />
+                                            Nr Kunvarjibhai Tower, Rajkot, Pin 360001</p>
+                                    </div>
+                                </li>
+                                <li className="py-2 flex mb-2">
+                                    <div className="">
+                                        <i className="fas fa-envelope me-3"></i>
+                                    </div>
+                                    <div>
+                                        <p>thadeswardevik@gmail.com</p>
+                                    </div>
+                                </li>
+                                <li className="py-2 flex">
+                                    <div className="">
+                                        <i className="fas fa-phone me-3"></i>
+                                    </div>
+                                    <div>
+                                        +91 95747 18838
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                         <div className="h-fit">
-                            <div className=" mb-4">
-                                <p className='fs-3'>Manzzri Jewels</p>
+                            <div className="mb-4">
+                                {/* <p className='fs-3'>Manzzri Jewels</p> */}
                                 <p className='tx-yellow fs-5'>Get your special offers, coupons & more...</p>
                             </div>
                             <form novalidate="novalidate" className="mx-auto">
@@ -87,37 +118,7 @@ export default function Footer() {
                                 </li>
                             </ul>
                         </div> */}
-                        <div className="">
-                            <h4 className="tx-yellow mb-4 fs-5">Contact Us</h4>
-                            <ul className="ps-0 fs-13">
-                                <li className="py-2 flex mb-2">
-                                    <div className="">
-                                        <i className="fas fa-home me-3"></i>
-                                    </div>
-                                    <div>
-                                        <p>204 - Raj Plaza, Palace Road,
-                                            <br />
-                                            Nr Kunvarjibhai Tower, Rajkot, Pin 360001</p>
-                                    </div>
-                                </li>
-                                <li className="py-2 flex mb-2">
-                                    <div className="">
-                                        <i className="fas fa-envelope me-3"></i>
-                                    </div>
-                                    <div>
-                                        <p>thadeswardevik@gmail.com</p>
-                                    </div>
-                                </li>
-                                <li className="py-2 flex mb-2">
-                                    <div className="">
-                                        <i className="fas fa-phone me-3"></i>
-                                    </div>
-                                    <div>
-                                        +91 95747 18838
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+
                         {/* <div className="mb-5 md:text-start">
                             <h4 className="tx-brown mb-4 fs-5">Mobile Apps</h4>
                             <div className='flex md:flex-col gap-3 w-100'>
@@ -130,10 +131,10 @@ export default function Footer() {
                             </div>
                         </div> */}
                     </div>
-                    <div className="row py-3">
+                    <div className="row">
                         <div className=" border-t-[1px] mx-auto">
-                            <div className="text-center">
-                                <p className='text-gray-400 mt-3'>© Design and develop with ❤️ by Grafizen Inc. for Manzzri.</p>
+                            <div className="text-center py-3">
+                                <p className='text-gray-400 mt-'>© Design and develop with ❤️ by Grafizen LLC for Manzzri</p>
                             </div>
                         </div>
                         {/* <div className="col-md-6 col-12">

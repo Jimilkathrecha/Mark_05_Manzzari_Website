@@ -3,7 +3,7 @@ import React from "react";
 export default function Spotlight() {
   return (
     <>
-      <div className="row w-[90%] mb-5 mx-auto ">
+      <div className="row w-[90%] mt-[100px] mb-5 mx-auto ">
         <div className="">
           <p className="my-5 fs-1 text-center title">
             Spotlight
@@ -29,14 +29,14 @@ export default function Spotlight() {
             <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
               <img
                 className="zoom-in w-100"
-                src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/gestone-jewellery-Ring.jpg"
+                src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/platinum-ring.jpg"
                 alt=""
               />
             </div>
             <div className="rounded-3 overflow-hidden" data-aos="zoom-in"  data-aos-duration="1800">
               <img
                 className="zoom-in w-100"
-                src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/platinum-ring.jpg"
+                src="https://static.malabargoldanddiamonds.com/media/wysiwyg/offer_page/2023/06_June/homepage/top-category/gestone-jewellery-Ring.jpg"
                 alt=""
               />
             </div>

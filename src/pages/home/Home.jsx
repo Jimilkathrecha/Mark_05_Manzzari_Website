@@ -12,20 +12,20 @@ import Banner from "../../components/slider/offers";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/Header";
 import Styleoflife from "../../components/styleoflife/styleoflife";
-// import Modal from '../../components/models/modal'
-import { Collection } from "../../components/slider/collection";
 import Spotlight from "../../components/spotlights/Spotlight";
 import Kadli from "../../components/slider/kadli";
-import Clientgallary from "../../components/slider/Clientgallary";
 import Whyus from "../about/Whyus";
 import { Features } from "../../components/features/Features";
-import { Favorite } from "../../components/favourite/Favourite";
 import Modal from "../../components/models/modal";
-import Slider from "react-slick";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllCollectionAction } from "../../redux/actions/collection";
 import Category from "../../components/category/Category";
 import Supporters from "../../components/supporters/Supporters ";
+// import Slider from "react-slick";
+// import Modal from '../../components/models/modal'
+// import { Collection } from "../../components/slider/collection";
+// import Clientgallary from "../../components/slider/Clientgallary";
+// import { Favorite } from "../../components/favourite/Favourite";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getAllCollectionAction } from "../../redux/actions/collection";
 
 export default function Home({
   isSkipLogin,
@@ -46,22 +46,22 @@ export default function Home({
     centerPadding: "0px",
   };
 
-  const dispatch = useDispatch();
-  const collectionState = useSelector((state) => state?.collectionState);
-  const [Collections, setCollections] = useState([]);
+  // const dispatch = useDispatch();
+  // const collectionState = useSelector((state) => state?.collectionState);
+  // const [Collections, setCollections] = useState([]);
 
-  useEffect(() => {
-    dispatch(getAllCollectionAction());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(getAllCollectionAction());
+  // }, [dispatch]);
 
-  useEffect(() => {
-    const collections = collectionState?.getAllCollection?.filter(
-      (collection) => {
-        return collection?.is_active === true;
-      }
-    );
-    setCollections(collections);
-  }, [collectionState?.getAllCollection]);
+  // useEffect(() => {
+  //   const collections = collectionState?.getAllCollection?.filter(
+  //     (collection) => {
+  //       return collection?.is_active === true;
+  //     }
+  //   );
+  //   setCollections(collections);
+  // }, [collectionState?.getAllCollection]);
 
   return (
     <>
@@ -192,7 +192,7 @@ export default function Home({
         Collections={Collections}
       /> */}
       <Whyus />
-      <Supporters />
+      {/* <Supporters /> */}
       {/* <Clientgallary /> */}
       <Footer />
       <Modal

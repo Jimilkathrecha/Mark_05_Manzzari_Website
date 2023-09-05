@@ -3,7 +3,7 @@ import React from "react";
 const Whyus = () => {
   return (
     <>
-      <div className="w-100 mt-[100px]">
+      <div className="w-100 my-[100px]">
         <div className="text-center">
           <p className="my-1 fs-1 text-center title">
             Why Manzzri
@@ -26,32 +26,32 @@ const Whyus = () => {
             </div>
           </div>
           <div className="w-100 md:w-50 mx-auto font-raleway">
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">Jewellery evaluation</p>
             </div>
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">Customised Jewellery design</p>
             </div>
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">Jewellery cleaning and polishing</p>
             </div>
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">
                 Customised Jewellery manufacturing
               </p>
             </div>
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">
                 In-house jewellery design and manufacturing
               </p>
             </div>
-            <div className="flex my-2 px-2 py-2 align-items-center rounded-lg bs-white border-[1px] border-brown shadow-md ">
-              <i class="fa-solid fa-shield mx-2 tx-brown"></i>
+            <div className="flex my-2 px-2 py-2 align-items-center bs-white border-b-[1px] border-brown ">
+              {/* <i class="fa-solid fa-shield mx-2 tx-brown"></i> */}
               <p className="m-0 font-bold">
                 Buying and selling of gold and silver bars or coins.
               </p>

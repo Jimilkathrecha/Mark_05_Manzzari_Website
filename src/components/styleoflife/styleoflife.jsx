@@ -3,10 +3,10 @@ import Slider from "react-slick";
 
 export default function Styleoflife() {
     const categories = {
-        infinite: true,
         arrows: false,
         slidesToShow: 5,
         slidesToScroll: 1,
+        infinite: true,
         autoPlay: true,
         autoPlaySpeed: 4000,
         speed: 2000,
@@ -130,34 +130,34 @@ export default function Styleoflife() {
             <Slider className='w-[80%] mx-auto d-md-block rounded-[15px] overflow-hidden' {...categories}>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/try-3.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-3.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/try-4.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-4.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/try-5.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-5.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/try-7.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-7.png" alt="" />
                     </div>
                 </div>
                 <div className='my-5 min-w-[200px] min-h-[200px]'>
                     <div className='max-w-[200px] max-h-[200px] mx-auto rounded-3xl w-100 border-0 text-center'>
-                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/styleof life-images/try-8.png" alt="" />
+                        <img className='w-[200px] h-[200px] rounded-3 my-3 mx-auto' src="/images/life/Try-8.png" alt="" />
                     </div>
                 </div>
             </Slider>
             <div className='w-100 mt-5'>
                 {/* <Slider className='w-[90%] mx-auto 3xs:h-[200px] xs:h-[250px] lg:h-[300px] rounded-[15px] overflow-hidden pointer' {...faded}>
                     <div className='w-100 rounded-[15px] overflow-hidden grab grabbing px-2'>
-                        <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src="./images/styleof life-images/banner4.1.png" alt="" />
+                        <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src="/images/style-of-life/banner4.1.png" alt="" />
                     </div>
                     <div className='w-100 rounded-[15px] overflow-hidden grab grabbing px-2'>
                         <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src='images/banner-animation/styleoflife-2.png' alt="" />
@@ -166,7 +166,7 @@ export default function Styleoflife() {
                         <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src='images/banner-animation/styleoflife-3.png' alt="" />
                     </div>
                     <div className='w-100 rounded-[15px] overflow-hidden grab grabbing px-2'>
-                        <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src="./images/styleof life-images/banner4.1.png" alt="" />
+                        <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src="/images/style-of-life/banner4.1.png" alt="" />
                     </div>
                     <div className='w-100 rounded-[15px] overflow-hidden grab grabbing px-2'>
                         <img className='w-100 3xs:h-[200px] xs:h-[250px] lg:h-[300px] object-cover rounded-[15px] pointer-events-none' src='images/banner-animation/styleoflife-2.png' alt="" />

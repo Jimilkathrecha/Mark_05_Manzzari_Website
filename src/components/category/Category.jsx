@@ -6,21 +6,21 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllCategoryAction } from "../../redux/actions/category";
 
 export default function Category() {
-    const dispatch = useDispatch();
-    const { getAllCategory, addCategory, updateCategory, deleteCategory } =
-        useSelector((state) => state.categoryState);
-    const [Categories, setCategories] = useState([]);
+    // const dispatch = useDispatch();
+    // const { getAllCategory, addCategory, updateCategory, deleteCategory } =
+    //     useSelector((state) => state.categoryState);
+    // const [Categories, setCategories] = useState([]);
 
-    useEffect(() => {
-        dispatch(getAllCategoryAction());
-    }, [dispatch]);
+    // useEffect(() => {
+    //     dispatch(getAllCategoryAction());
+    // }, [dispatch]);
 
-    useEffect(() => {
-        const categories = getAllCategory?.filter((category) => {
-            return category?.is_publish === true;
-        });
-        setCategories(categories);
-    }, [getAllCategory]);
+    // useEffect(() => {
+    //     const categories = getAllCategory?.filter((category) => {
+    //         return category?.is_publish === true;
+    //     });
+    //     setCategories(categories);
+    // }, [getAllCategory]);
 
     const Categoryslide = {
         infinite: true,
@@ -66,32 +66,32 @@ export default function Category() {
     const category = [
         {
             id: 1,
-            name: "Earring",
+            name: "Mangalsutra",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw49fd1e7c/images/hi-res/500934SBAAAA09_1.jpg?sw=360&sh=360",
         },
         {
             id: 2,
-            name: "Ring",
+            name: "Necklace",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw6b40fba0/images/hi-res/50D2FFFHAAA29_1.jpg?sw=360&sh=360",
         },
         {
             id: 3,
-            name: "Mangalsutra",
+            name: "Bracelet",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw8550650c/images/hi-res/511819YGTAA00_1.jpg?sw=360&sh=360",
         },
         {
             id: 4,
-            name: "Bracelet",
+            name: "Kadli",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwf1f167f2/images/hi-res/50D2P2BYRAA32_1.jpg?sw=360&sh=360",
         },
         {
             id: 5,
-            name: "Necklace",
+            name: "Earring",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwb74efb4c/images/hi-res/50D2P2NYYAA32_1.jpg?sw=360&sh=360",
         },
         {
             id: 6,
-            name: "Nose ring",
+            name: "Ring",
             img: "https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dw4b1020ed/images/hi-res/500064OZAAAB04_1.jpg?sw=360&sh=360",
         },
         {
@@ -113,11 +113,11 @@ export default function Category() {
                     <p className="my-5 fs-1 text-center title">Our Categories</p>
                 </div>
             </div>
-            <div className="w-[80%] mx-auto">
+            <div className="w-[80%] mx-auto font-raleway">
                 <div className="flex flex-col">
                     <div className="justify-between xl:flex">
                         <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -126,18 +126,18 @@ export default function Category() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center align-items-center my-4">
-                                    <h3 className="text-center mb-2 font-medium text-lg px-1">
-                                        {Categories[0]?.name}
+                                    <h3 className="text-center mb-2 font-semibold text-lg px-1">
+                                        {category[0]?.name}
                                     </h3>
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full"></p>
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="flex flex-col justify-center align-items-center my-4">
-                                    <h3 className="text-center mb-2 font-medium text-lg px-1">
-                                        {Categories[1]?.name}
+                                    <h3 className="text-center mb-2 font-semibold text-lg px-1">
+                                        {category[1]?.name}
                                     </h3>
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]"></p>
@@ -153,7 +153,7 @@ export default function Category() {
                             </div>
                         </div>
                         <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="img2 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -165,18 +165,18 @@ export default function Category() {
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full"></p>
                                     </span>
-                                    <h3 className="text-center mt-2 font-medium text-lg">
-                                        {Categories[2]?.name}
+                                    <h3 className="text-center mt-2 font-semibold text-lg">
+                                        {category[2]?.name}
                                     </h3>
                                 </div>
                             </div>
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="flex flex-col justify-center align-items-center my-4">
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]"></p>
                                     </span>
-                                    <h3 className="text-center mt-2 font-medium text-lg">
-                                        {Categories[3]?.name}
+                                    <h3 className="text-center mt-2 font-semibold text-lg">
+                                        {category[3]?.name}
                                     </h3>
                                 </div>
                                 <div className="img2 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
@@ -189,7 +189,7 @@ export default function Category() {
                             </div>
                         </div>
                         <div className="justify-between gap-4 my-3 xl:flex-col md:flex">
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="img1 border-2 border-brown rounded-lg rounded-tl-[40px] rounded-br-[40px] relative min-w-[200px] min-h-[240px]">
                                     <img
                                         className="min-w-[200px] h-60 rounded-[7px] rounded-tl-[40px] rounded-br-[40px] absolute top-2 right-2 -z-10 hover:top-0 hover:right-0"
@@ -198,8 +198,8 @@ export default function Category() {
                                     />
                                 </div>
                                 <div className="flex flex-col justify-center align-items-center my-4">
-                                    <h3 className="text-center mb-2 font-medium text-lg px-1">
-                                        {Categories[4]?.name}
+                                    <h3 className="text-center mb-2 font-semibold text-lg px-1">
+                                        {category[4]?.name}
                                     </h3>
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] start-[-1px] top-[-2.5px] rounded-full"></p>
@@ -207,10 +207,10 @@ export default function Category() {
                                 </div>
                             </div>
 
-                            <div className="flex gap-3 my-3 justify-center">
+                            <div className="flex gap-3 my-4 justify-center">
                                 <div className="flex flex-col justify-center align-items-center my-4">
-                                    <h3 className="text-center mb-2 font-medium text-lg px-1">
-                                        {Categories[5]?.name}
+                                    <h3 className="text-center mb-2 font-semibold text-lg px-1">
+                                        {category[5]?.name}
                                     </h3>
                                     <span className="relative bs-brown h-[2px] w-20 rounded-2xl">
                                         <p className="absolute bs-brown h-[7px] w-[7px] top-[-2.5px] rounded-full end-[-1px]"></p>
