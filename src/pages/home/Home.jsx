@@ -16,9 +16,9 @@ import Spotlight from "../../components/spotlights/Spotlight";
 import Kadli from "../../components/slider/kadli";
 import Whyus from "../about/Whyus";
 import { Features } from "../../components/features/Features";
-import Modal from "../../components/models/Modal";
 import Category from "../../components/category/Category";
 import Supporters from "../../components/supporters/Supporters ";
+import Modals from "../../components/models/Modals";
 // import Slider from "react-slick";
 // import Modal from '../../components/models/modal'
 // import { Collection } from "../../components/slider/collection";
@@ -70,124 +70,27 @@ export default function Home({
   return (
     <>
       <Header setIsOpenLoginModal={setIsOpenLoginModal} />
-
-      {/* <Slider className="h-[80vh]" {...Banners}> */}
       <div
         id="carouselExampleRide"
         class="carousel carousel-dark slide "
         data-bs-ride="true"
       >
-        {/* <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleRide"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"
-          ></button>
-        </div> */}
+
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
             <div className="flex-none w-full h-full snap-center">
               <Landingpage />
             </div>
           </div>
-          {/* <div class="carousel-item" data-bs-interval="20000">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage2 />
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="30000">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage3 />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage4 />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage5 />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage6 />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className="flex-none w-full h-full snap-center border">
-              <Landingpage7 />
-            </div>
-          </div> */}
         </div>
       </div>
 
-      {/* <div className="flex snap-x snap-mandatory scroll-d-none overflow-auto w-200 h-[100vh]"></div> */}
-      {/* </Slider> */}
-
-        
       <Styleoflife setIsOpenLoginModal={setIsOpenLoginModal} />
       <Features />
-      <Category setIsOpenLoginModal={setIsOpenLoginModal}/>
-      <Spotlight setIsOpenLoginModal={setIsOpenLoginModal}/>
-       {/*<Collection
-        isSkipLogin={isSkipLogin}
-        setIsSkipLogin={setIsSkipLogin}
-        setIsOpenLoginModal={setIsOpenLoginModal}
-        Direction="LTR"
-        Title="Manzzri's Fevorite"
-        Collections={Collections}
-      />
-      <Collection
-        isSkipLogin={isSkipLogin}
-        setIsSkipLogin={setIsSkipLogin}
-        setIsOpenLoginModal={setIsOpenLoginModal}
-        Direction="RTL"
-        Title="bacha Kadli"
-        Collections={Collections}
-      /> */}
-      <Banner setIsOpenLoginModal={setIsOpenLoginModal}/>
-       {/*<Collection
+      <Category setIsOpenLoginModal={setIsOpenLoginModal} />
+      <Spotlight setIsOpenLoginModal={setIsOpenLoginModal} />
+      <Banner setIsOpenLoginModal={setIsOpenLoginModal} />
+      {/*<Collection
         isSkipLogin={isSkipLogin}
         setIsSkipLogin={setIsSkipLogin}
         setIsOpenLoginModal={setIsOpenLoginModal}
@@ -195,11 +98,11 @@ export default function Home({
         Title="Soulmates"
         Collections={Collections}
       /> */}
-      <Whyus />
+      {/* <Whyus /> */}
       {/* <Supporters /> */}
       {/* <Clientgallary /> */}
       <Footer />
-      <Modal
+      <Modals
         isOpenLoginModal={isOpenLoginModal}
         setIsOpenLoginModal={setIsOpenLoginModal}
         isOpenOtpModal={isOpenOtpModal}

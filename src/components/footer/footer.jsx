@@ -20,7 +20,7 @@ export default function Footer() {
                                     <div>
                                         <p>204 - Raj Plaza, Palace Road,
                                             <br />
-                                            Nr Kunvarjibhai Tower, Rajkot, Pin 360001</p>
+                                            Nr Kunvarjibhai Tower, Rajkot, Gujarat, Pin 360001</p>
                                     </div>
                                 </li>
                                 <li className="py-2 flex mb-2">
@@ -36,7 +36,7 @@ export default function Footer() {
                                         <i className="fas fa-phone me-3"></i>
                                     </div>
                                     <div>
-                                        +91 95747 18838
+                                        +91 93273 06697
                                     </div>
                                 </li>
                             </ul>
